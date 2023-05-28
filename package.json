@@ -1,0 +1,60 @@
+{
+  "name": "my-gatsby-blog",
+  "version": "1.0.7",
+  "private": true,
+  "description": "Strapi Gatsby Blog",
+  "author": "Strapi team",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "gatsby": "^4.6.1",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-gatsby-cloud": "^4.7.0",
+    "gatsby-plugin-google-gtag": "4.2.0",
+    "gatsby-plugin-image": "^2.6.0",
+    "gatsby-plugin-postcss": "^5.6.0",
+    "gatsby-plugin-sharp": "^4.6.0",
+    "gatsby-source-strapi": "^2.0.0",
+    "gatsby-transformer-remark": "^5.6.0",
+    "gatsby-transformer-sharp": "^4.6.0",
+    "install": "^0.13.0",
+    "postcss": "^8.4.6",
+    "react": "^17.0.1",
+    "react-adsense": "^0.1.0",
+    "react-bootstrap": "^2.7.4",
+    "react-burger-menu": "3.0.8",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^5.2.0",
+    "react-scroll-to-top": "^3.0.0",
+    "react-slick": "^0.28.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.1",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.4",
+    "tailwindcss": "^3.0.18"
+  }
+}
