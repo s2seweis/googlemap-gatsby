@@ -3,7 +3,7 @@ import React from 'react';
 import logo5 from '../assets/images/logo5.png';
 
 // ###open
-import {FaAlignRight} from 'react-icons/fa';
+// import {FaAlignRight} from 'react-icons/fa';
 import {HiMenuAlt2} from 'react-icons/hi';
 
 import pageLinks from '../constans/links';
@@ -11,7 +11,7 @@ import pageLinks from '../constans/links';
 import {Link} from 'gatsby';
 
 // ###
-import MenuBurger from './burger-menu';
+// import MenuBurger from './burger-menu';
 
 import Sidebar from '../components/sidebar';
 

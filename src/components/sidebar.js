@@ -8,11 +8,11 @@ import {FaTimes} from 'react-icons/fa';
 
 // import hero from "../assets/images/hero.svg"
 
-import {FaFacebookSquare} from 'react-icons/fa';
-import {FaInstagram} from 'react-icons/fa';
-import {FaTiktok} from 'react-icons/fa';
-import {FaYoutube} from 'react-icons/fa';
-import logo5 from '../assets/images/logo5.png';
+// import {FaFacebookSquare} from 'react-icons/fa';
+// import {FaInstagram} from 'react-icons/fa';
+// import {FaTiktok} from 'react-icons/fa';
+// import {FaYoutube} from 'react-icons/fa';
+// import logo5 from '../assets/images/logo5.png';
 
 
 const Sidebar = ({isOpen, toggleSidebar}) => {

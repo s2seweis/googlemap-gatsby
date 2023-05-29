@@ -6,7 +6,7 @@ import {FaTiktok} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 
 const Footer = () => {
-  const currentYear = new Date ().getFullYear ();
+  // const currentYear = new Date ().getFullYear ();
 
   return (
     <footer style={{color: 'white'}} className="footer-blog">

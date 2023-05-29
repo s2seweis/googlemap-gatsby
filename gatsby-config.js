@@ -96,17 +96,17 @@ module.exports = {
         ],
         singleTypes: [
 
-          {
-            singularName: 'about',
-            queryParams: {
-              populate: {
-                cover: '*',
-                blocks: {
-                  populate: '*',
-                },
-              },
-            },
-          },
+          // {
+          //   singularName: 'about',
+          //   queryParams: {
+          //     populate: {
+          //       cover: '*',
+          //       blocks: {
+          //         populate: '*',
+          //       },
+          //     },
+          //   },
+          // },
 
 
           {
@@ -122,10 +122,10 @@ module.exports = {
           },
 
 
-          'info',
-          'overview',
-          'content3',
-          'hero1',
+          // 'info',
+          // 'overview',
+          // 'content3',
+          // 'hero1',
 
           // 'me'
 

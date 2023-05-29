@@ -51,18 +51,18 @@ const IndexPage = () => {
 
       <Hero />
       {/* <Seperate /> */}
-      <Hero1 />
+      {/* <Hero1 /> */}
       {/* <Seperate /> */}
-      <E2 />
+      {/* <E2 /> */}
 
       {/* <Headings
         title={strapiGlobal.siteName}
         description={strapiGlobal.siteDescription}
       /> */}
 
-      <Overview />
+      {/* <Overview /> */}
 
-      <Content3 />
+      {/* <Content3 /> */}
       {/* <Content3 /> */}
 
       <Grid />

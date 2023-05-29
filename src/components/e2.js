@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'gatsby';
-import {StaticImage} from 'gatsby-plugin-image';
+// import {Link} from 'gatsby';
+// import {StaticImage} from 'gatsby-plugin-image';
 
 // import group from '../assets/images/group.png';
 
@@ -152,7 +152,7 @@ const E2 = () => {
               style={{
                 marginTop: '100%',
                 display: 'flex',
-                justifyContent: 'center',
+                // justifyContent: 'center',
                 width: '100%',
                 justifyContent: 'space-between',
                 fontSize: '2rem',

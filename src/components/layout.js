@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Footer from './footer';
-import Navbar from './navbar';
+// import Navbar from './navbar';
 import Navbar1 from './navbar-v2';
 
 import Sidebar from './sidebar';
@@ -13,7 +13,7 @@ import CookieConsent from 'react-cookie-consent';
 
 import {FaFacebookSquare} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
-import {FaTiktok} from 'react-icons/fa';
+// import {FaTiktok} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 
 // ###
@@ -50,6 +50,8 @@ const Layout = ({children}) => {
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
 
+
+      {/* ###Side Component - Making an own Component out of it */}
       <div className="social-media-left-side" 
       // style={{fontSize: '2.2rem'}}
       >
@@ -84,6 +86,8 @@ const Layout = ({children}) => {
 
       </div>
 
+      {/* ### */}
+
       <div>
 
         <CookieConsent
@@ -94,7 +98,7 @@ const Layout = ({children}) => {
           buttonStyle={{color: '#4e503b', fontSize: '13px'}}
           expires={150}
         >
-          This website uses cookies to enhance the user experience.{' '}
+          This website uses cookies to enhance the user experience.
           <span style={{fontSize: '10px'}}>
             <div style={{marginTop: '20px'}}>
 

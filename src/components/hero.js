@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'gatsby';
-import {StaticImage} from 'gatsby-plugin-image';
+// import {Link} from 'gatsby';
+// import {StaticImage} from 'gatsby-plugin-image';
 
 // import group from '../assets/images/group.png';
 

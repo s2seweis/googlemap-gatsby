@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import {Link} from 'gatsby';
-import {StaticImage} from 'gatsby-plugin-image';
+// import {Link} from 'gatsby';
+// import {StaticImage} from 'gatsby-plugin-image';
 
 import {use} from '../styles/main-use.css';
 
@@ -24,7 +24,7 @@ const Grid = () => {
 
 
   query {
-    allStrapiArticle(filter: {categories: {eq: "breakfast"}}) {
+    allStrapiArticle {
       nodes {
         ...ArticleCard
       }
@@ -50,7 +50,6 @@ const Grid = () => {
           marginTop: '20px',
           display: 'flex',
           justifyContent: 'center',
-          marginTop: '20px',
           marginBottom: '20px',
           fontFamily: 'Lobster Two',
           fontSize: '3rem',

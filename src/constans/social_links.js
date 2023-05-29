@@ -1,11 +1,11 @@
 import React from "react"
 import {
   FaFacebookSquare,
-  FaLinkedin,
-  FaGithub,
-  FaBehanceSquare,
-  FaTwitterSquare,
-  FaInstagram,
+  // FaLinkedin,
+  // FaGithub,
+  // FaBehanceSquare,
+  // FaTwitterSquare,
+  // FaInstagram,
   FaTiktok,
   FaYoutube
   
