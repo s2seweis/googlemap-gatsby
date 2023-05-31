@@ -18,22 +18,25 @@ import Overview from '../components/overview';
 // import Seperate from '../components/seperate';
 import Content3 from '../components/content3';
 import E1 from '../components/e2';
+import Map from '../components/map';
 
 import ScrollToTop from 'react-scroll-to-top';
 
 // ###
 
-import {GoogleMap, Marker, useLoadScript} from '@react-google-maps/api';
-import {useMemo} from 'react';
+// import {GoogleMap, Marker, useLoadScript} from '@react-google-maps/api';
+// import {useMemo} from 'react';
 
 // ###
 
 const IndexPage = () => {
-  const {isLoaded} = useLoadScript ({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-  });
 
-  const center = useMemo (() => ({lat: 18.52043, lng: 73.856743}), []);
+  // const {isLoaded} = useLoadScript ({
+  //   // googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA",
+  //   googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+  // });
+
+  // const center = useMemo (() => ({lat: 18.52043, lng: 73.856743}), []);
 
   const {allStrapiArticle, strapiGlobal} = useStaticQuery (graphql`
     query {
@@ -73,7 +76,9 @@ const IndexPage = () => {
 
       <E1 />
 
-      <div className="App">
+      <Map />
+
+      {/* <div className="App">
         <h1>GoogleMap API</h1>
         {!isLoaded
           ? <h1>Loading...</h1>
@@ -82,7 +87,7 @@ const IndexPage = () => {
               center={center}
               zoom={10}
             />}
-      </div>
+      </div> */}
 
       {/* <Headings
         title={strapiGlobal.siteName}
