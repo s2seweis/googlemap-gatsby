@@ -17,6 +17,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
     "bootstrap": "^5.2.3",
     "gatsby": "^4.6.1",
     "gatsby-omni-font-loader": "^2.0.2",
