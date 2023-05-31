@@ -19,7 +19,7 @@ function Map() {
     <div className='map' style={{display:"flex", justifyContent:"center"}} >
     <LoadScript
     //   googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}
-    //   googleMapsApiKey={map1}
+      googleMapsApiKey={map1}
     //   googleMapsApiKey=""
     >
       <GoogleMap
