@@ -30,7 +30,6 @@ import {useMemo} from 'react';
 
 const IndexPage = () => {
   const {isLoaded} = useLoadScript ({
-    // googleMapsApiKey: "AIzaSyDQQQ0-nbHRT6gkbtMlaVRgxawHwLITyGI",
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
 
