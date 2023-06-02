@@ -94,9 +94,10 @@ const Layout = ({children}) => {
           location="bottom"
           buttonText="I Accept It"
           cookieName="myAwesomeCookieName2"
-          style={{background: '#708d3e'}}
+          style={{background: '#0d6efd'}}
           buttonStyle={{color: '#4e503b', fontSize: '13px'}}
           expires={150}
+          
         >
           This website uses cookies to enhance the user experience.
           <span style={{fontSize: '10px'}}>
