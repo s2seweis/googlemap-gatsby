@@ -69,12 +69,12 @@ const IndexPage = () => {
         }}
       />
 
-      <Hero />
+      {/* <Hero /> */}
       {/* <Seperate /> */}
       {/* <Hero1 /> */}
       {/* <Seperate /> */}
 
-      <E1 />
+      {/* <E1 /> */}
 
       <Map />
 

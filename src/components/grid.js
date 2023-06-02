@@ -56,7 +56,7 @@ const Grid = () => {
           background: 'antiquewhite',
         }}
       >
-        {' '}Our Best Recipes{' '}
+        {' '}Tourist attractions{' '}
       </h1>
 
       <ArticlesGrid articles={allStrapiArticle.nodes} />

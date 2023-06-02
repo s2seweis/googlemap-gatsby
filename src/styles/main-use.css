@@ -248,7 +248,7 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: #708d3e;
+  background: #0d6efd;
 }
 .nav-center {
 
@@ -686,7 +686,7 @@ color: #fafafa;
     grid-template-columns: repeat(6,1fr);
     display: grid;
     height: 100%;
-    background-color: #708d3e;
+    background-color: #0d6efd;
     font-size: 2rem;
 
   }
@@ -1189,7 +1189,7 @@ background-color: orange;
 
 .footer-blog{
 
-background-color: #8baf4d;
+background-color: #4086ec;
   height: 70px;
   font-family: "Lobster Two";
   font-size: 1.3rem;
