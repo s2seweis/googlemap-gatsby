@@ -51,15 +51,88 @@ const Grid = () => {
           display: 'flex',
           justifyContent: 'center',
           marginBottom: '20px',
-          fontFamily: 'Lobster Two',
-          fontSize: '3rem',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
           background: 'antiquewhite',
         }}
       >
-        {' '}Tourist attractions{' '}
+        {' '}Marker Clustering{' '}
+      </h1>
+      <h5>https://developers.google.com/maps/documentation/javascript/kml</h5>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Pan to Current Location{' '}
+      </h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Displaying KML{' '}
+      </h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Combining JSON Data{' '}
+      </h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Place Search Pagination{' '}
+      </h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Waypoints in Directions{' '}
       </h1>
 
-      <ArticlesGrid articles={allStrapiArticle.nodes} />
+      {/* <ArticlesGrid articles={allStrapiArticle.nodes} /> */}
+
+      <h3>Coming soon!</h3>
 
       <div
         className="ui breadcrumb"

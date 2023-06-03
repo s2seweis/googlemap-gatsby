@@ -140,6 +140,14 @@ module.exports = {
             name: `Lobster+Two`,
             file: `https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300&display=swap`,
           },
+          {
+            name: `Sora`,
+            file: `https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap`,
+          },
+          {
+            name: `Roboto`,
+            file: `https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sora:wght@200&display=swap`,
+          },
         ],
       },
     },

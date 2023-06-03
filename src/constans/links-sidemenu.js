@@ -10,37 +10,37 @@ const data = [
       url: "/about/",
     },
 
-    {
-      id: 3,
-      text: "breakfast",
-      url: "/breakfast/",
-    },
-    {
-      id: 4,
-      text: "lunch",
-      url: "/lunch",
-    },
-    {
-      id: 5,
-      text: "dinner",
-      url: "/dinner/",
-    },
+    // {
+    //   id: 3,
+    //   text: "breakfast",
+    //   url: "/breakfast/",
+    // },
+    // {
+    //   id: 4,
+    //   text: "lunch",
+    //   url: "/lunch",
+    // },
+    // {
+    //   id: 5,
+    //   text: "dinner",
+    //   url: "/dinner/",
+    // },
 
-    {
-      id: 6,
-      text: "Dessert",
-      url: "/dessert/",
-    },
-    {
-      id: 7,
-      text: "Fiesta",
-      url: "/fiesta",
-    },
-    {
-      id: 8,
-      text: "beverage",
-      url: "/beverage/",
-    },
+    // {
+    //   id: 6,
+    //   text: "Dessert",
+    //   url: "/dessert/",
+    // },
+    // {
+    //   id: 7,
+    //   text: "Fiesta",
+    //   url: "/fiesta",
+    // },
+    // {
+    //   id: 8,
+    //   text: "beverage",
+    //   url: "/beverage/",
+    // },
 
     {
       id: 9,

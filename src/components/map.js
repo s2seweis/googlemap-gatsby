@@ -102,12 +102,12 @@ console.log("line:105",handleMarkerClick);
           display: 'flex',
           justifyContent: 'center',
           marginBottom: '20px',
-          fontFamily: 'Lobster Two',
-          fontSize: '3rem',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
           background: 'antiquewhite',
         }}
       >
-        {' '}Google Map Playground{' '}
+        {' '} Markers and Buttons {' '}
       </h1>
 
     <div className='map' style={{display:"flex", justifyContent:"center", margin:"5px"}} >

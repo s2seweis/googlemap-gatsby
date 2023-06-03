@@ -4,6 +4,7 @@ import {FaFacebookSquare} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {FaTiktok} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
 
 const Footer = () => {
   // const currentYear = new Date ().getFullYear ();
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="footer-e1">
 
           <a className="footer-e1-a" style={{}} href="/copyright">
-            Copyright SWT
+            Copyright
           </a>
 
         </div>
@@ -48,24 +49,24 @@ const Footer = () => {
             href="https://www.instagram.com/"
             className="link-social-desktop"
           >
-            <span><FaInstagram /></span>
+            <span><FaGithub /></span>
           </a>
-          <a
+          {/* <a
             aria-label="link"
             // style={{color: 'black'}}
             href="https://www.tiktok.com/en/"
             className="link-social-desktop"
           >
             <span><FaTiktok /></span>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             aria-label="link"
             // style={{color: 'black'}}
             href="https://www.tiktok.com/en/"
             className="link-social-desktop"
           >
             <span><FaYoutube /></span>
-          </a>
+          </a> */}
          
 
         </div>

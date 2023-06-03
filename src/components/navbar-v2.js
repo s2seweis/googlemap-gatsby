@@ -18,6 +18,19 @@ import Sidebar from '../components/sidebar';
 import '../styles/burger.css';
 // ###
 
+import {
+  FaFacebookSquare,
+  // FaLinkedin,
+  FaGithub,
+  // FaBehanceSquare,
+  // FaTwitterSquare,
+  // FaInstagram,
+  FaTiktok,
+  FaYoutube,
+} from 'react-icons/fa';
+
+import {SiGooglemaps} from 'react-icons/si';
+
 const Navbar1 = ({toggleSidebar}) => {
   return (
     <nav style={{position: 'sticky'}} className="navbar">
@@ -27,7 +40,8 @@ const Navbar1 = ({toggleSidebar}) => {
 
           {/* <img src={logo} alt="web dev" /> */}
           <a href="/">
-            <img src={logo5} alt="web dev" />
+            {/* <img src={logo5} alt="web dev" /> */}
+            <span style={{fontSize:"5rem"}}><SiGooglemaps style={{color:"black"}}/></span>
           </a>
 
           {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
@@ -36,34 +50,30 @@ const Navbar1 = ({toggleSidebar}) => {
 
         </div>
 
-
-
-
         <div className="nav-title">
 
-
-        <button style={{marginLeft:"15px"}} type="button" className="toggle-btn" onClick={toggleSidebar}>
+          <button
+            style={{marginLeft: '15px'}}
+            type="button"
+            className="toggle-btn"
+            onClick={toggleSidebar}
+          >
             <HiMenuAlt2 />
           </button>
-
 
           <h2
             className="h2-nav-title"
             style={{
               display: 'flex',
               justifyContent: 'center',
-              fontFamily: 'Lobster Two',
-              width:"100%"
+              // fontFamily: 'Lobster Two',
+              width: '100%',
             }}
           >
             {/* The Solace Life */}
             GoogleMap Playground
           </h2>
         </div>
-
-        
-          
-        
 
         <div className="nav-links">
           {pageLinks.map (link => {

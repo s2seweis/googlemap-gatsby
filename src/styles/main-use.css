@@ -310,7 +310,7 @@ Navbar
     justify-content: flex-end;
     color: #fafafa;
     font-size: x-large;
-    font-family: "Lobster Two";
+    /* font-family: "Lobster Two"; */
     grid-column: 11/span 1;
     
   }
@@ -319,7 +319,7 @@ Navbar
     margin-right: 2rem;
     text-transform: capitalize;
     color: var(--clr-grey-1);
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: var(--spacing);
     transition: var(--transition);
     padding: 0.5rem 0;
@@ -561,7 +561,7 @@ Sidebar Animation
   .nav-title{
     display: grid;
 
-    grid-column: 4/span 5;
+    grid-column: 4/span 6;
 
   }
 }
@@ -1191,7 +1191,7 @@ background-color: orange;
 
 background-color: #4086ec;
   height: 70px;
-  font-family: "Lobster Two";
+  /* font-family: "Lobster Two"; */
   font-size: 1.3rem;
 }
 
