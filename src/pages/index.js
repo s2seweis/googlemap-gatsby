@@ -18,7 +18,12 @@ import Overview from '../components/overview';
 // import Seperate from '../components/seperate';
 import Content3 from '../components/content3';
 import E1 from '../components/e2';
-import Map from '../components/map';
+import Map1 from '../components/maps/map-markers-buttons';
+import Map2 from '../components/maps/map-infobox';
+import Map3 from '../components/maps/map-clusterer';
+
+import MapContainer from '../components/maps/clusterer/MapContainer';
+
 
 import ScrollToTop from 'react-scroll-to-top';
 
@@ -76,7 +81,31 @@ const IndexPage = () => {
 
       {/* <E1 /> */}
 
-      <Map />
+      {/* ### */}
+      <Map1 />
+      {/* ### */}
+      <Map2 />
+      {/* ### */}
+
+
+
+
+
+
+      {/* ### */}
+      <MapContainer/>
+      {/* ### */}
+
+
+      {/* ### */}
+      {/* <Map3 /> */}
+      {/* ### */}
+      
+      {/* ### */}
+      {/* ### */}
+
+
+
 
       {/* <div className="App">
         <h1>GoogleMap API</h1>

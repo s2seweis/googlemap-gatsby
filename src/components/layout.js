@@ -21,25 +21,25 @@ import {FaYoutube} from 'react-icons/fa';
 const Layout = ({children}) => {
   const scrolled = useRef (null);
 
-  useEffect (() => {
-    const headID = document.getElementsByTagName ('head')[0];
+  // useEffect (() => {
+  //   const headID = document.getElementsByTagName ('head')[0];
 
-    document.addEventListener ('scroll', function (e) {
-      if (!scrolled.current) {
-        scrolled.current = true;
+  //   document.addEventListener ('scroll', function (e) {
+  //     if (!scrolled.current) {
+  //       scrolled.current = true;
 
-        // Google Ads
-        const gaScript = document.createElement ('script');
-        gaScript.async = true;
-        gaScript.crossorigin = 'anonymous';
-        gaScript['data-ad-client'] = '5912939817167412';
-        gaScript.src =
-          'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-        gaScript.type = 'text/javascript';
-        headID.appendChild (gaScript);
-      }
-    });
-  }, []);
+  //       // Google Ads
+  //       const gaScript = document.createElement ('script');
+  //       gaScript.async = true;
+  //       gaScript.crossorigin = 'anonymous';
+  //       gaScript['data-ad-client'] = '5912939817167412';
+  //       gaScript.src =
+  //         'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+  //       gaScript.type = 'text/javascript';
+  //       headID.appendChild (gaScript);
+  //     }
+  //   });
+  // }, []);
 
   const [isOpen, setIsOpen] = useState (false);
 

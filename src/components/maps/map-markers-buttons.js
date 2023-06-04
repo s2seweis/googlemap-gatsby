@@ -43,7 +43,7 @@ console.log("line:100", map1);
 
 // ###-MarkerClusterer-End
 
-function Map() {
+function Map1() {
 
 
 
@@ -84,6 +84,7 @@ const handleMarkerClick = (id, lat, lng, address, href) => {
   setInfoWindowData({ id, address, lat, href });
   setIsOpen(true);
 };
+
 console.log("line:105",handleMarkerClick);
 
 
@@ -212,7 +213,7 @@ console.log("line:105",handleMarkerClick);
   )
 }
 
-export default React.memo(Map)
+export default React.memo(Map1)
 
 
 

@@ -14,17 +14,24 @@ export default function HTML (props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <script
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5912939817167412"
           crossOrigin='anonymous'
-        />
+        /> */}
+
+
+        <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js" />
 
         {props.headComponents}
 
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
+
+
+        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" /> */}
+
 
         <div
           key={`loader`}

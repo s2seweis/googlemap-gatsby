@@ -34,12 +34,7 @@ const Grid = () => {
       siteDescription
     }
   }
-`)
-
-
-
-
-
+`);
 
   return (
     <header className="menu-landing" style={{}}>
@@ -58,7 +53,10 @@ const Grid = () => {
       >
         {' '}Marker Clustering{' '}
       </h1>
-      <h5>https://developers.google.com/maps/documentation/javascript/kml</h5>
+      <div
+      style={{lineBreak:"anywhere", padding:"10px"}}
+      
+      >https://developers.google.com/maps/documentation/javascript/kml</div>
       <h1
         style={{
           textAlign: 'center',
@@ -141,7 +139,7 @@ const Grid = () => {
           justifyContent: 'center',
           // marginBottom: '50px',
           marginTop: '50px',
-          paddingBottom:"50px"
+          paddingBottom: '50px',
         }}
       >
         <a aria-label="News" className="section" href="/news">News</a>
