@@ -50,7 +50,7 @@
     "@ubilabs/google-maps-react-hooks": "^1.5.1",
     "uuid": "7.0.3",
     "react-geocode": "^0.2.3",
-    "use-position": "0.0.7"
+    "use-position": "1.0.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.3.1",
