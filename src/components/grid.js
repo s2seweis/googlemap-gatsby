@@ -39,38 +39,9 @@ const Grid = () => {
   return (
     <header className="menu-landing" style={{}}>
 
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'antiquewhite',
-        }}
-      >
-        {' '}Marker Clustering{' '}
-      </h1>
-      <div
-      style={{lineBreak:"anywhere", padding:"10px"}}
+  
+   
       
-      >https://developers.google.com/maps/documentation/javascript/kml</div>
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'antiquewhite',
-        }}
-      >
-        {' '}Pan to Current Location{' '}
-      </h1>
       <h1
         style={{
           textAlign: 'center',

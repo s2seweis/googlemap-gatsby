@@ -31,7 +31,7 @@ var locations2 = [
 
   {lat: 9.124809, lng: 124.67595},
   {lat: 9.246481, lng: 124.726069},
-  {lat: 9.187243, lng: 124.640022}
+  {lat: 9.187243, lng: 124.640022},
 ];
 
 export default function MapContainer () {
@@ -77,7 +77,7 @@ export default function MapContainer () {
   }
 
   return (
-    <div>
+    <div className="marker-clustering-level1">
 
       <h1
         style={{
@@ -91,22 +91,24 @@ export default function MapContainer () {
           background: 'antiquewhite',
         }}
       >
-        {' '}Marker Clustering{' '}
+        {' '}Marker Clustering v1{' '}
       </h1>
+      <div className='marker-clustering-level2' style={{display:"flex", justifyContent:"center", margin:"5px"}} >
 
-      <Map setMap={setMap} zoom={7}>
-        <MarkerClusterer>
-          {clusterer =>
-            locs.map (loc => (
-              <CustomMarker
-                key={uuidv4 ()}
-                position={loc}
-                clusterer={clusterer}
-                zoom={7}
-              />
-            ))}
-        </MarkerClusterer>
-      </Map>
+        <Map setMap={setMap} zoom={7}>
+          <MarkerClusterer>
+            {clusterer =>
+              locs.map (loc => (
+                <CustomMarker
+                  key={uuidv4 ()}
+                  position={loc}
+                  clusterer={clusterer}
+                  zoom={7}
+                />
+              ))}
+          </MarkerClusterer>
+        </Map>
+      </div>
       {/* <div
         className="buttons"
         style={{display: 'flex', justifyContent: 'center'}}

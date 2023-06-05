@@ -1,6 +1,5 @@
 /*global google*/
 
-
 import React, {useState, useCallback} from 'react';
 
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
@@ -24,24 +23,41 @@ export default function Index () {
   return (
     <GoogleMapProvider
       // googleMapsAPIKey={process.env.NEXT_PUBLIC_MAP_API_KEY}
-      googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
+      // googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
       options={mapOptions}
       mapContainer={mapContainer}
       onLoad={onLoad}
       style={{}}
-      
     >
-      <div ref={node => setMapContainer (node)} 
-      style={{height: '400px', width:"400px", margin:"auto"}} 
-      // style={{height: '100vh'}} 
-      />
+
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'antiquewhite',
+        }}
+      >
+        {' '}Marker Clustering v2{' '}
+      </h1>
+
+      <div className='marker-clustering-v2' style={{display:"flex", justifyContent:"center", margin: '5px'}} >
+        <div
+          ref={node => setMapContainer (node)}
+          style={{height: '400px', width: '400px' }}
+          // style={{height: '100vh'}}
+        />
+      </div>
     </GoogleMapProvider>
   );
 }
 
 function addMarkers (map) {
-    
-//   const google = window.google;
+  //   const google = window.google;
   const infoWindow = new google.maps.InfoWindow ();
 
   const markers = trees.map (([name, lat, lng]) => {
@@ -60,16 +76,13 @@ function addMarkers (map) {
     return marker;
   });
 
-
   // const markerCluster = new MarkerClusterer({ map, markers });
 
-  new MarkerClusterer({ map, markers });
+  new MarkerClusterer ({map, markers});
 
   // new MarkerClusterer ({
   //   markers,
   //   map,
   //   algorithm: new SuperClusterAlgorithm ({radius: 200}),
   // });
-
-
 }

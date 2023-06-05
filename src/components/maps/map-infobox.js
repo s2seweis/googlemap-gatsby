@@ -26,7 +26,7 @@ const center = {
 const options = {closeBoxURL: '', enableEventPropagation: true};
 
 const onLoad = infoBox => {
-  console.log ('infoBox: ', infoBox);
+  // console.log ('infoBox: ', infoBox);
 };
 
 function Map2 () {
@@ -53,8 +53,9 @@ function Map2 () {
         style={{display: 'flex', justifyContent: 'center', margin: '5px'}}
       >
 
-        <LoadScript // googleMapsApiKey={map1}
-        googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA">
+        {/* <LoadScript // googleMapsApiKey={map1}
+        googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"> */}
+
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
@@ -73,7 +74,7 @@ function Map2 () {
 
           </GoogleMap>
 
-        </LoadScript>
+        {/* </LoadScript> */}
       </div>
 
     </div>

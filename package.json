@@ -49,7 +49,8 @@
     "@googlemaps/markerclusterer": "^2.0.10",
     "@ubilabs/google-maps-react-hooks": "^1.5.1",
     "uuid": "7.0.3",
-    "react-geocode": "^0.2.3"
+    "react-geocode": "^0.2.3",
+    "use-position": "0.0.7"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.3.1",

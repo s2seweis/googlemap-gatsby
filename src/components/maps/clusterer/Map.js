@@ -10,12 +10,12 @@ const options = {
   labels: true,
 };
 
-export default function Map(props) {
+export default function clearMap(props) {
   const { setMap, children } = props;
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" // ,
-    // ...otherOptions
-  });
+  // const { isLoaded, loadError } = useLoadScript({
+  //   googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" // ,
+  //   // ...otherOptions
+  // });
 
   const renderMap = () => {
     // wrapping to a function is useful in case you want to access `window.google`
@@ -51,9 +51,9 @@ export default function Map(props) {
     );
   };
 
-  if (loadError) {
-    return <div>Map cannot be loaded right now, sorry.</div>;
-  }
+  // if (loadError) {
+  //   return <div>Map cannot be loaded right now, sorry.</div>;
+  // }
 
-  return isLoaded ? renderMap() : <div>Loading...</div>;
+  return renderMap() ;
 }

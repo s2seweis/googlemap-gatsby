@@ -21,7 +21,7 @@ const center = {
 
 // ###
 const map1 = process.env.REACT_APP_GOOGLE_API_KEY
-console.log("line:100", map1);
+// console.log("line:100", map1);
 // ###
 
 
@@ -49,11 +49,11 @@ function Map1() {
 
   const [mapRef, setMapRef] = useState();
 
-  console.log("line:101", setMapRef);
-  console.log("line:102", setMapRef);
+  // console.log("line:101", setMapRef);
+  // console.log("line:102", setMapRef);
   const [isOpen, setIsOpen] = useState(false);
   const [infoWindowData, setInfoWindowData] = useState();
-  console.log("line:103", infoWindowData);
+  // console.log("line:103", infoWindowData);
 
 const markers = [
   { address: "Camiguin Island", lat: 9.177347, lng: 124.71956, href:"/404" },
@@ -64,12 +64,12 @@ const markers = [
   { address: "Mambajao", lat: 9.246481, lng: 124.726069, href:"/copyright"    },
   { address: "Old Church", lat: 9.187243, lng: 124.640022, href:"/dessert"  },
 ];       
-console.log("line:104", markers);
+// console.log("line:104", markers);
 
 // console.log("line:104.1", markers.map(({address, lat, lng}) => ({[address]: lat}) ))
 
-console.log("line:104.2", markers.map(({address, lat, lng}) => ({address}) ))
-console.log("line:104.4", markers.map(({address, lat, lng, href}) => ({href}) ))
+// console.log("line:104.2", markers.map(({address, lat, lng}) => ({address}) ))
+// console.log("line:104.4", markers.map(({address, lat, lng, href}) => ({href}) ))
 
 // console.log("line:104.3", markers.address)
 
@@ -85,7 +85,6 @@ const handleMarkerClick = (id, lat, lng, address, href) => {
   setIsOpen(true);
 };
 
-console.log("line:105",handleMarkerClick);
 
 
 
@@ -116,10 +115,10 @@ console.log("line:105",handleMarkerClick);
 
 
 
-    <LoadScript
+    {/* <LoadScript
       // googleMapsApiKey={map1}
-      googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
-    >
+      // googleMapsApiKey="AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
+    > */}
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
@@ -205,7 +204,7 @@ console.log("line:105",handleMarkerClick);
 
         </div>
 
-    </LoadScript>
+    {/* </LoadScript> */}
     </div>
     
     </div>

@@ -30,7 +30,7 @@ export default function HTML (props) {
         {props.preBodyComponents}
 
 
-        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" /> */}
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" />
 
 
         <div
