@@ -104,7 +104,7 @@ const handleMarkerClick = (id, lat, lng, address, href) => {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '} Markers and Buttons {' '}

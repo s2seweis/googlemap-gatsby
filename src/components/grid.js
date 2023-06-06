@@ -51,7 +51,7 @@ const Grid = () => {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '}Displaying KML{' '}
@@ -65,7 +65,7 @@ const Grid = () => {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '}Combining JSON Data{' '}
@@ -79,7 +79,7 @@ const Grid = () => {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '}Place Search Pagination{' '}
@@ -93,7 +93,7 @@ const Grid = () => {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '}Waypoints in Directions{' '}

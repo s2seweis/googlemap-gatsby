@@ -42,7 +42,7 @@ function Map2 () {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '} Infobox {' '}

@@ -39,7 +39,7 @@ export default function Index () {
           marginBottom: '20px',
           // fontFamily: 'Lobster Two',
           fontSize: '2rem',
-          background: 'antiquewhite',
+          background: 'lightskyblue',
         }}
       >
         {' '}Marker Clustering v2{' '}

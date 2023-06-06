@@ -71,7 +71,7 @@ const Navbar1 = ({toggleSidebar}) => {
             }}
           >
             {/* The Solace Life */}
-            GoogleMap Playground
+            G-Map Playground
           </h2>
         </div>
 
