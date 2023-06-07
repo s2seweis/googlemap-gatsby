@@ -35,7 +35,7 @@ function Map5() {
    // This is just an example of getting and using the map instance!!! don't just blindly copy!
    const bounds = map;
 
-   var kmlLayer = new google.maps.KmlLayer(src, {
+   const kmlLayer = new google.maps.KmlLayer(src, {
     suppressInfoWindows: true,
     preserveViewport: false,
     map: map
