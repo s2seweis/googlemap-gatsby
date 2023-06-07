@@ -1,4 +1,6 @@
 // import React from 'react';
+/*global google*/
+
 
 import React, {useState, useCallback, useEffect} from 'react';
 

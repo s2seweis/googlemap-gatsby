@@ -7,6 +7,11 @@
   "keywords": [
     "gatsby"
   ],
+  "eslintConfig": {
+    "globals": {
+        "google": true
+    }
+},
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -22,6 +27,7 @@
     "@react-google-maps/api": "^2.18.1",
     "@ubilabs/google-maps-react-hooks": "^1.5.1",
     "bootstrap": "^5.2.3",
+    "eslint-config-google": "^0.14.0",
     "gatsby": "^4.6.1",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
@@ -64,4 +70,6 @@
     "prettier-plugin-tailwindcss": "^0.1.4",
     "tailwindcss": "^3.0.18"
   }
+
+  
 }
