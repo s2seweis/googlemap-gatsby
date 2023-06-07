@@ -104,7 +104,7 @@ const IndexPage = () => {
 
       {/* ### - Test */}
 
-      {/* <Map5 /> */}
+      <Map5 />
 
       {/* ### - Test */}
 
