@@ -40,22 +40,6 @@ const Grid = () => {
     <header className="menu-landing" style={{}}>
 
   
-   
-      
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '}Displaying KML{' '}
-      </h1>
       <h1
         style={{
           textAlign: 'center',

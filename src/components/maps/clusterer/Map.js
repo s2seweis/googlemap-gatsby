@@ -6,6 +6,7 @@ const defaultCenter = { lat: 28.612734, lng: 77.231178 };
 const options = {
   disableDefaultUI: true,
   scaleControl: true,
+  // mapTypeId: "terrain",
   mapTypeId: "roadmap",
   labels: true,
 };
@@ -41,7 +42,7 @@ export default function clearMap(props) {
           width: "400px",
           margin:"auto",
         }}
-        zoom={7}
+        // zoom={7}
         // center={defaultCenter}
         options={options}
         onLoad={loadHandler}

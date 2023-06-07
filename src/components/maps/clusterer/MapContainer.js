@@ -61,20 +61,20 @@ export default function MapContainer () {
     map.fitBounds (bounds);
   }
 
-  function removeMarker () {
-    setLocs (locs => (toggle ? locations2 : locations2));
-    setToggle (!toggle);
-  }
+  // function removeMarker () {
+  //   setLocs (locs => (toggle ? locations2 : locations2));
+  //   setToggle (!toggle);
+  // }
 
-  function removeSome () {
-    let _locs = [...locs];
-    const removeValFromIndex = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+  // function removeSome () {
+  //   let _locs = [...locs];
+  //   const removeValFromIndex = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
 
-    for (var i = removeValFromIndex.length - 1; i >= 0; i--)
-      _locs.splice (removeValFromIndex[i], 1);
+  //   for (var i = removeValFromIndex.length - 1; i >= 0; i--)
+  //     _locs.splice (removeValFromIndex[i], 1);
 
-    setLocs (_locs);
-  }
+  //   setLocs (_locs);
+  // }
 
   return (
     <div className="marker-clustering-level1">
@@ -95,7 +95,9 @@ export default function MapContainer () {
       </h1>
       <div className='marker-clustering-level2' style={{display:"flex", justifyContent:"center", margin:"5px"}} >
 
-        <Map setMap={setMap} zoom={7}>
+        <Map setMap={setMap} 
+        // zoom={7}
+        >
           <MarkerClusterer>
             {clusterer =>
               locs.map (loc => (
@@ -103,7 +105,7 @@ export default function MapContainer () {
                   key={uuidv4 ()}
                   position={loc}
                   clusterer={clusterer}
-                  zoom={7}
+                  // zoom={7}
                 />
               ))}
           </MarkerClusterer>

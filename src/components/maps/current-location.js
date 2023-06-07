@@ -18,17 +18,17 @@ export default function Map4() {
   const [currentPosition, setCurrentPosition] = useState({ lat: 9.177347, lng: 124.71956 });
           //   defaultCenter={{ lat: 9.177347, lng: 124.71956 }}
 
-  console.log("line:1", currentPosition);
-  console.log("line:2", setCurrentPosition);
+  // console.log("line:1", currentPosition);
+  // console.log("line:2", setCurrentPosition);
   const [currentZoom, setCurrentZoom] = useState(9);
   const { latitude, longitude, error } = usePosition();
-  console.log("line:3", latitude);
-  console.log("line:4", longitude);
+  // console.log("line:3", latitude);
+  // console.log("line:4", longitude);
 
 
 
   useEffect(() => {
-    console.log("use eff");
+    // console.log("use eff");
     if (latitude && longitude && !error) {
       // Fetch weather data here.
       setCurrentPosition({ lat: latitude, lng: longitude });

@@ -18,9 +18,10 @@ import 'semantic-ui-css/semantic.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Overview from '../components/overview';
-// import Seperate from '../components/seperate';
+
 import Content3 from '../components/content3';
 import E1 from '../components/e2';
+
 import Map1 from '../components/maps/map-markers-buttons';
 import Map2 from '../components/maps/map-infobox';
 import Map3 from '../components/maps/map-clusterer';
@@ -32,6 +33,9 @@ import ScrollToTop from 'react-scroll-to-top';
 // ### - Test
 
 import Map4 from '../components/maps/current-location';
+
+import Map5 from '../components/maps/map-kml';
+
 
 // ### - Test
 
@@ -75,16 +79,23 @@ const IndexPage = () => {
       {/* <E1 /> */}
 
       {/* ### */}
+
       <Map1 />
+
       {/* ### */}
+
       <Map2 />
+
       {/* ### */}
 
       {/* ### */}
+
       <MapContainer />
+
       {/* ### */}
 
       {/* ### */}
+
       <Map3 />
 
       {/* ### - Test */}
@@ -93,24 +104,14 @@ const IndexPage = () => {
 
       {/* ### - Test */}
 
-      {/* <div className="App">
-        <h1>GoogleMap API</h1>
-        {!isLoaded
-          ? <h1>Loading...</h1>
-          : <GoogleMap
-              mapContainerClassName="map-container"
-              center={center}
-              zoom={10}
-            />}
-      </div> */}
+      <Map5 />
 
-      {/* <Headings
-        title={strapiGlobal.siteName}
-        description={strapiGlobal.siteDescription}
-      /> */}
+      {/* ### - Test */}
+
+
+      {/* ### - Test */}
 
       {/* <Overview /> */}
-
       {/* <Content3 /> */}
       {/* <Content3 /> */}
 
