@@ -60,19 +60,4 @@ Adding extra Posts. Just a Test for it - Today2.
 <!-- Push Test 1-->
 
 ## Overview
- - Using Bootsrap/Tailwind
- - Add Posts 
- - Edit Posts 
- - Delete Posts 
- - Filter Posts by Categories
- - Hero Elements 
- - Social Media Links
- - Animated Side Navigation Menu 
- - Added Youtube I-Frames to Posts
- - Using Simple Cookie Banner
- - Using Google Analytics and Google Adsense 
- - View Supported by Mobile, Tablet and Desktop
- - Search Engine Optimization by Lighthouse measuring 100% 
- - Converted JPG to WebP
- - Checked the HTTP/2 connection via Networks
- - Connected to www.thesolacelife.com
+ 
