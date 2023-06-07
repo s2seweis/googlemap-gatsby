@@ -24,10 +24,10 @@ const mapOptions = {
 var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
 
 function Map5() {
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
-  })
+  // const { isLoaded } = useJsApiLoader({
+  //   id: 'google-map-script',
+  //   googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
+  // })
 
   const [map, setMap] = React.useState()
   console.log("line:1000", map);
@@ -64,7 +64,7 @@ function Map5() {
     setMap()
   }, [])
 
-  return isLoaded ? (
+  return  (
 
     <div className='kml-level1'>
 
@@ -111,7 +111,7 @@ function Map5() {
 
         </div>
 
-  ) : <></>
+  ) 
 }
 
 export default React.memo(Map5)
