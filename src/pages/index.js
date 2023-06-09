@@ -38,6 +38,8 @@ import Map4 from '../components/maps/current-location';
 
 import Map5 from '../components/maps/map-kml';
 
+import Map6 from '../components/maps/map-kml-v2';
+
 
 // ### - Test
 
@@ -110,6 +112,7 @@ const IndexPage = () => {
 
       {/* ### - Test */}
 
+      {/* <Map6 /> */}
 
       {/* ### - Test */}
 

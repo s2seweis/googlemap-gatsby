@@ -7,12 +7,21 @@ export default function HTML (props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
+
+
+      {/* <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&callback=initMap" /> */}
+
+
+
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
+{/* <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&callback=initMap" /> */}
+
 
         {/* <script
           async
@@ -30,6 +39,7 @@ export default function HTML (props) {
         {props.preBodyComponents}
 
 
+        {/* <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&callback=initMap" /> */}
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" />
 
 

@@ -1,7 +1,10 @@
-/*global google*/
+// /*global google*/
 
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+
+import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
+
 
 const containerStyle = {
   width: '400px',
@@ -29,40 +32,46 @@ function Map5() {
   //   googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
   // })
 
-  const [map, setMap] = React.useState()
+  // const google = window.google
+
+  const [map, setMap] = React.useState(null)
   console.log("line:1000", map);
 
    // This is just an example of getting and using the map instance!!! don't just blindly copy!
    const bounds = map;
+   console.log("line2000", bounds);
 
-   const kmlLayer = new google.maps.KmlLayer(src, {
-    suppressInfoWindows: true,
-    preserveViewport: false,
-    map: map
-  });
-
-  kmlLayer.addListener('click', function(event) {
-    var content = event.featureData.infoWindowHtml;
-    var testimonial = document.getElementById('capture');
-    testimonial.innerHTML = content;
-  });
+  //  const kmlLayer = new google.maps.KmlLayer(src, {
+  
 
   const onLoad = React.useCallback(function callback(map) {
 
     // ###
+    const kmlLayer = new google.maps.KmlLayer(src, {
+      suppressInfoWindows: true,
+      preserveViewport: false,
+      map: map
+    });
+  
+    kmlLayer.addListener('click', function(event) {
+      var content = event.featureData.infoWindowHtml;
+      var testimonial = document.getElementById('capture');
+      testimonial.innerHTML = content;
+    });
+   
 
   
 
 
-    // ###
-   
-
+  // ###
     setMap(map)
   }, [])
 
+  // ###
   const onUnmount = React.useCallback(function callback(map) {
     setMap()
   }, [])
+  // ###
 
   return  (
 
@@ -114,4 +123,5 @@ function Map5() {
   ) 
 }
 
-export default React.memo(Map5)
+// export default React.memo(Map5)
+export default Map5
