@@ -6,6 +6,7 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
 
 
+
 const containerStyle = {
   width: '400px',
   height: '400px'
@@ -24,7 +25,19 @@ const mapOptions = {
   },
 };
 
-var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
+// var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
+
+// v3
+// var src = 'http://drive.google.com/uc?id=1li-BqVTpRC_hjKZAdZVpkSUY43zs-tyA';
+// v4
+var src = 'http://drive.google.com/uc?id=17dWHn__7pJR2Y4PPg8v7sFxvyaFm5ntW';
+
+console.log(src);
+
+
+
+// var src1 = {kml};
+// console.log(src1);
 
 function Map5() {
   // const { isLoaded } = useJsApiLoader({
