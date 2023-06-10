@@ -5,6 +5,8 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
 
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
+
 
 
 const containerStyle = {
@@ -12,41 +14,28 @@ const containerStyle = {
   height: '400px'
 };
 
-// const center = {
-//   lat: -3.745,
-//   lng: -38.523
-// };
+
 
 const mapOptions = {
-  zoom: 7,
+  zoom: 3,
   center: {
-    lat: 9.102097,
-    lng: 123.400931,
+    lat: -28.024,
+    lng: 140.887,
   },
 };
 
-// var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
-
-
-// v8
-var src = 'http://drive.google.com/uc?id=1eL2O46h6Gajszl1fH7VPKFSsMceAPcYh';
-
-// https://drive.google.com/drive/my-drive here its stored - kml file build with google earth
-
-console.log(src);
 
 
 
-// var src1 = {kml};
-// console.log(src1);
 
-function Map5() {
-  // const { isLoaded } = useJsApiLoader({
-  //   id: 'google-map-script',
-  //   googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
-  // })
 
-  // const google = window.google
+let infoWindow;
+
+
+
+
+function Map7() {
+ 
 
   const [map, setMap] = React.useState(null)
   console.log("line:1000", map);
@@ -55,24 +44,55 @@ function Map5() {
    const bounds = map;
    console.log("line2000", bounds);
 
-  //  const kmlLayer = new google.maps.KmlLayer(src, {
   
 
   const onLoad = React.useCallback(function callback(map) {
 
     // ###
-    const kmlLayer = new google.maps.KmlLayer(src, {
-      suppressInfoWindows: true,
-      preserveViewport: false,
-      map: map
-    });
   
-    kmlLayer.addListener('click', function(event) {
-      var content = event.featureData.infoWindowHtml;
-      var testimonial = document.getElementById('capture');
-      testimonial.innerHTML = content;
-    });
    
+    infoWindow = new google.maps.InfoWindow();
+
+    const locationButton = document.createElement("button");
+
+    locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+
+
+  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(
+      browserHasGeolocation
+        ? "Error: The Geolocation service failed."
+        : "Error: Your browser doesn't support geolocation."
+    );
+    infoWindow.open(map);
+  }
 
   
 
@@ -104,7 +124,7 @@ function Map5() {
           background: 'lightskyblue',
         }}
       >
-        {' '} Display KML {' '}
+        {' '} Current Location V2 {' '}
       </h1>
 
 
@@ -124,7 +144,7 @@ function Map5() {
         options={mapOptions}
         >
         { /* Child components, such as markers, info windows, etc. */ }
-        <></>
+        {/* <markerCluster></markerCluster>< */}
       </GoogleMap>
         </div>
         <div className='capture-level1' style={{display:"flex", justifyContent:"center"}}>
@@ -137,5 +157,5 @@ function Map5() {
   ) 
 }
 
-// export default React.memo(Map5)
-export default Map5
+// export default React.memo(Map7)
+export default Map7

@@ -1,7 +1,6 @@
 // import React from 'react';
 /*global google*/
 
-
 import React, {useState, useCallback, useEffect} from 'react';
 
 import {useStaticQuery, graphql} from 'gatsby';
@@ -38,8 +37,8 @@ import Map4 from '../components/maps/current-location';
 
 import Map5 from '../components/maps/map-kml';
 
-import Map6 from '../components/maps/map-kml-v2';
-
+import Map6 from '../components/maps/map-marker-clustering';
+import Map7 from '../components/maps/pan-current-location';
 
 // ### - Test
 
@@ -110,9 +109,11 @@ const IndexPage = () => {
 
       <Map5 />
 
-      {/* ### - Test */}
+      <Map6 />
 
-      {/* <Map6 /> */}
+      <Map7 />
+
+      {/* ### - Test */}
 
       {/* ### - Test */}
 

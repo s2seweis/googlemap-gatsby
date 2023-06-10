@@ -5,7 +5,7 @@
 //     <Style id="west_campus_style">
 //       <IconStyle>
 //         <Icon>
-//           <href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png
+//           <href>https://developers.google.com/static/maps/documentation/javascript/images/default-marker.png
 //           </href>
 //         </Icon>
 //       </IconStyle>
@@ -18,7 +18,7 @@
 //       <styleUrl>#west_campus_style</styleUrl>
 //       <ExtendedData>
 //         <Data name="video">
-//           <value><![CDATA[<iframe width="400" height="400" margin="5px"
+//           <value><![CDATA[<iframe width="350" height="400" margin="5px"
 //             src="https://www.youtube.com/embed/5JBVe4o2tIg" frameborder="0"
 //             allowfullscreen></iframe><br><br>]]></value>
 //         </Data>
@@ -32,8 +32,8 @@
 //       <styleUrl>#west_campus_style</styleUrl>
 //       <ExtendedData>
 //         <Data name="video">
-//           <value><![CDATA[<iframe width="400" height="400" margin="5px"
-//             src="https://www.youtube.com/embed/H8fd64MfPNg" frameborder="0"
+//           <value><![CDATA[<iframe width="350" height="400" margin="5px"
+//             src="https://www.youtube.com/embed/JFXRtb9XaYw" frameborder="0"
 //             allowfullscreen></iframe><br><br>]]></value>
 //         </Data>
 //       </ExtendedData>
@@ -45,7 +45,7 @@
 //       <styleUrl>#west_campus_style</styleUrl>
 //       <ExtendedData>
 //         <Data name="video">
-//           <value><![CDATA[<iframe width="400" height="400" margin="5px"
+//           <value><![CDATA[<iframe width="350" height="400" margin="5px"
 //             src="https://www.youtube.com/embed/H8fd64MfPNg" frameborder="0"
 //             allowfullscreen></iframe><br><br>]]></value>
 //         </Data>
@@ -56,5 +56,3 @@
 //     </Placemark>
 //   </Document>
 // </kml>
-
-
