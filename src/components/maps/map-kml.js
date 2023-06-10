@@ -30,9 +30,11 @@ const mapOptions = {
 // v3
 // var src = 'http://drive.google.com/uc?id=1li-BqVTpRC_hjKZAdZVpkSUY43zs-tyA';
 // v4
-var src = 'http://drive.google.com/uc?id=17dWHn__7pJR2Y4PPg8v7sFxvyaFm5ntW';
+// var src = 'http://drive.google.com/uc?id=17dWHn__7pJR2Y4PPg8v7sFxvyaFm5ntW';
 // v5
 // var src = 'http://drive.google.com/uc?id=1Ba6LTIBtIYVnnnn5yeFdFzW8GPOqeuPf';
+// v6
+var src = 'http://drive.google.com/uc?id=1-awW3gGFeNeJpMlxSCE--wE9QrDHOejd';
 
 console.log(src);
 
