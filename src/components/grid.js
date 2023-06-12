@@ -40,6 +40,7 @@ const Grid = () => {
     <header className="menu-landing" style={{}}>
 
   
+      
       <h1
         style={{
           textAlign: 'center',
@@ -52,23 +53,9 @@ const Grid = () => {
           background: 'lightskyblue',
         }}
       >
-        {' '}Combining JSON Data{' '}
+        {' '}Places Search Box{' '}
       </h1>
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '}Place Search Pagination{' '}
-      </h1>
-      <h1
+      {/* <h1
         style={{
           textAlign: 'center',
           marginTop: '20px',
@@ -81,7 +68,7 @@ const Grid = () => {
         }}
       >
         {' '}Waypoints in Directions{' '}
-      </h1>
+      </h1> */}
 
       {/* <ArticlesGrid articles={allStrapiArticle.nodes} /> */}
 

@@ -1,15 +1,13 @@
 // /*global google*/
 
-import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import React from 'react';
+import {GoogleMap, useJsApiLoader} from '@react-google-maps/api';
 
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
 
-
-
 const containerStyle = {
   width: '400px',
-  height: '400px'
+  height: '400px',
 };
 
 // const center = {
@@ -27,20 +25,17 @@ const mapOptions = {
 
 // var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
 
-
 // v8
 var src = 'http://drive.google.com/uc?id=1eL2O46h6Gajszl1fH7VPKFSsMceAPcYh';
 
 // https://drive.google.com/drive/my-drive here its stored - kml file build with google earth
 
-console.log(src);
-
-
+console.log (src);
 
 // var src1 = {kml};
 // console.log(src1);
 
-function Map5() {
+function Map5 () {
   // const { isLoaded } = useJsApiLoader({
   //   id: 'google-map-script',
   //   googleMapsApiKey: "AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA"
@@ -48,51 +43,44 @@ function Map5() {
 
   // const google = window.google
 
-  const [map, setMap] = React.useState(null)
-  console.log("line:1000", map);
+  const [map, setMap] = React.useState (null);
+  console.log ('line:1000', map);
 
-   // This is just an example of getting and using the map instance!!! don't just blindly copy!
-   const bounds = map;
-   console.log("line2000", bounds);
+  // This is just an example of getting and using the map instance!!! don't just blindly copy!
+  const bounds = map;
+  console.log ('line2000', bounds);
 
   //  const kmlLayer = new google.maps.KmlLayer(src, {
-  
+    
 
-  const onLoad = React.useCallback(function callback(map) {
-
+  const onLoad = React.useCallback (function callback (map) {
     // ###
-    const kmlLayer = new google.maps.KmlLayer(src, {
+    const kmlLayer = new google.maps.KmlLayer (src, {
       suppressInfoWindows: true,
       preserveViewport: false,
-      map: map
+      map: map,
     });
-  
-    kmlLayer.addListener('click', function(event) {
+
+    kmlLayer.addListener ('click', function (event) {
       var content = event.featureData.infoWindowHtml;
-      var testimonial = document.getElementById('capture');
+      var testimonial = document.getElementById ('capture');
       testimonial.innerHTML = content;
     });
-   
 
-  
-
-
-  // ###
-    setMap(map)
-  }, [])
+    // ###
+    setMap (map);
+  }, []);
 
   // ###
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap()
-  }, [])
+  const onUnmount = React.useCallback (function callback (map) {
+    setMap ();
+  }, []);
   // ###
 
-  return  (
+  return (
+    <div className="kml-level1">
 
-    <div className='kml-level1'>
-
-
-<h1
+      <h1
         style={{
           textAlign: 'center',
           marginTop: '20px',
@@ -107,35 +95,35 @@ function Map5() {
         {' '} Display KML {' '}
       </h1>
 
+      <div
+        className="kml"
+        style={{display: 'flex', justifyContent: 'center', margin: '5px'}}
+      >
 
-
-    <div className='kml' style={{display:"flex", justifyContent:"center", margin:"5px"}}>
-
-
-      
-
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        // center={center}
-        // zoom={5}
-        // iniZoom={5}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-        options={mapOptions}
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          // center={center}
+          // zoom={5}
+          // iniZoom={5}
+          onLoad={onLoad}
+          onUnmount={onUnmount}
+          options={mapOptions}
         >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
-        </div>
-        <div className='capture-level1' style={{display:"flex", justifyContent:"center"}}>
+          {/* Child components, such as markers, info windows, etc. */}
 
-        <div id="capture"></div>
-        </div>
+        </GoogleMap>
+      </div>
+      <div
+        className="capture-level1"
+        style={{display: 'flex', justifyContent: 'center'}}
+      >
 
-        </div>
+        <div id="capture" />
+      </div>
 
-  ) 
+    </div>
+  );
 }
 
 // export default React.memo(Map5)
-export default Map5
+export default Map5;

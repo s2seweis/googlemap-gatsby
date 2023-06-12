@@ -63,11 +63,11 @@ function Map6() {
  
 
   const [map, setMap] = React.useState(null)
-  console.log("line:1000", map);
+  // console.log("line:1000", map);
 
    // This is just an example of getting and using the map instance!!! don't just blindly copy!
    const bounds = map;
-   console.log("line2000", bounds);
+  //  console.log("line2000", bounds);
 
   
 

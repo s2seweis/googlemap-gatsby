@@ -101,9 +101,14 @@ const IndexPage = () => {
 
       <Map3 />
 
+
+
       {/* ### - Test */}
 
       <Map4 />
+
+      <Map7 />
+
 
       {/* ### - Test */}
 
@@ -111,7 +116,10 @@ const IndexPage = () => {
 
       <Map6 />
 
-      <Map7 />
+
+
+
+
 
       {/* ### - Test */}
 
