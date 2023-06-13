@@ -30,7 +30,7 @@ var src = 'http://drive.google.com/uc?id=1eL2O46h6Gajszl1fH7VPKFSsMceAPcYh';
 
 // https://drive.google.com/drive/my-drive here its stored - kml file build with google earth
 
-console.log (src);
+// console.log (src);
 
 // var src1 = {kml};
 // console.log(src1);
@@ -44,11 +44,11 @@ function Map5 () {
   // const google = window.google
 
   const [map, setMap] = React.useState (null);
-  console.log ('line:1000', map);
+  // console.log ('line:1000', map);
 
   // This is just an example of getting and using the map instance!!! don't just blindly copy!
   const bounds = map;
-  console.log ('line2000', bounds);
+  // console.log ('line2000', bounds);
 
   //  const kmlLayer = new google.maps.KmlLayer(src, {
     

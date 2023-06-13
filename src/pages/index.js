@@ -39,6 +39,7 @@ import Map5 from '../components/maps/map-kml';
 
 import Map6 from '../components/maps/map-marker-clustering';
 import Map7 from '../components/maps/pan-current-location';
+import Map8 from '../components/maps/map-search-box';
 
 // ### - Test
 
@@ -83,6 +84,9 @@ const IndexPage = () => {
 
       {/* ### */}
 
+      {/* <Map5 /> */}
+
+
       <Map1 />
 
       {/* ### */}
@@ -102,6 +106,7 @@ const IndexPage = () => {
       <Map3 />
 
 
+      <Map6 />
 
       {/* ### - Test */}
 
@@ -109,12 +114,12 @@ const IndexPage = () => {
 
       <Map7 />
 
+      <Map8 />
+
 
       {/* ### - Test */}
 
-      <Map5 />
 
-      <Map6 />
 
 
 

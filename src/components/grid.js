@@ -41,7 +41,7 @@ const Grid = () => {
 
   
       
-      <h1
+      {/* <h1
         style={{
           textAlign: 'center',
           marginTop: '20px',
@@ -54,7 +54,7 @@ const Grid = () => {
         }}
       >
         {' '}Places Search Box{' '}
-      </h1>
+      </h1> */}
       {/* <h1
         style={{
           textAlign: 'center',
@@ -72,7 +72,7 @@ const Grid = () => {
 
       {/* <ArticlesGrid articles={allStrapiArticle.nodes} /> */}
 
-      <h3>Coming soon!</h3>
+      {/* <h3>Coming soon!</h3> */}
 
       <div
         className="ui breadcrumb"
