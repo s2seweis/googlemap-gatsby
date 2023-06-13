@@ -48,6 +48,12 @@ function Map2 () {
         {' '} Infobox {' '}
       </h1>
 
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div style={{width:"400px"}}>
+        Infoboxes are information windows or pop-up boxes that appear when interacting with markers or other map features in the Google Maps environment. They provide a way to display additional information and details related to a specific location or point of interest on the map. 
+        </div>
+      </div>
+
       <div
         className="map"
         style={{display: 'flex', justifyContent: 'center', margin: '5px'}}

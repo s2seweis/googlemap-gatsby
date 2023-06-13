@@ -51,7 +51,6 @@ function Map5 () {
   // console.log ('line2000', bounds);
 
   //  const kmlLayer = new google.maps.KmlLayer(src, {
-    
 
   const onLoad = React.useCallback (function callback (map) {
     // ###
@@ -92,8 +91,46 @@ function Map5 () {
           background: 'lightskyblue',
         }}
       >
+        {' '} Introduction {' '}
+      </h1>
+
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div className="linebreak" style={{width: '400px'}}>
+         
+         <p>Following sources were used for building this website:</p>
+         <p>https://developers.google.com/maps/documentation/javascript/overview</p>
+         <p>https://www.npmjs.com/package/@react-google-maps/api</p>
+         <p>https://www.npmjs.com/package/google-map-react</p>
+        
+        
+        </div>
+      </div>
+
+      <h1
+        style={{
+          textAlign: 'center',
+          marginTop: '20px',
+          display: 'flex',
+          justifyContent: 'center',
+          marginBottom: '20px',
+          // fontFamily: 'Lobster Two',
+          fontSize: '2rem',
+          background: 'lightskyblue',
+        }}
+      >
         {' '} Display KML {' '}
       </h1>
+
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div style={{width: '400px'}}>
+          KML, which stands for Keyhole Markup Language, is a file format used for displaying geographic data in mapping applications, with Google Maps being one of the popular platforms that supports it.
+
+          KML files contain a combination of structured data and markup tags that define various geographical features such as points, lines, polygons, and overlays. These features can include coordinates, descriptions, styles, icons, and other relevant information.
+
+          With Google Maps, you can import KML files to visualize and interact with geographic data.
+          {' '}
+        </div>
+      </div>
 
       <div
         className="kml"

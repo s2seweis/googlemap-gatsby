@@ -110,7 +110,16 @@ const handleMarkerClick = (id, lat, lng, address, href) => {
         {' '} Markers and Buttons {' '}
       </h1>
 
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div style={{width:"400px"}}>
+        Buttons and Google Maps are two distinct elements, but they can be interconnected to enhance user interactions and provide convenient functionality within the Google Maps environment. 
+        </div>
+      </div>
+
     <div className='map' style={{display:"flex", justifyContent:"center", margin:"5px"}} >
+
+
+
 
 
 

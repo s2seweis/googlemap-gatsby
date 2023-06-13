@@ -93,6 +93,14 @@ export default function MapContainer () {
       >
         {' '}Marker Clustering v1{' '}
       </h1>
+
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div style={{width:"400px"}}>
+        Marker clustering is a technique used in Google Maps to visually manage large numbers of markers in close proximity to each other. It helps to improve performance and maintain map readability by grouping nearby markers into clusters, which are represented by a single cluster marker. 
+        </div>
+      </div>
+
+      
       <div className='marker-clustering-level2' style={{display:"flex", justifyContent:"center", margin:"5px"}} >
 
         <Map setMap={setMap} 

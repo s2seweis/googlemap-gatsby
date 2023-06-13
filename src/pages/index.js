@@ -22,21 +22,18 @@ import Overview from '../components/overview';
 
 import Content3 from '../components/content3';
 import E1 from '../components/e2';
+import ScrollToTop from 'react-scroll-to-top';
+
+
+
+
 
 import Map1 from '../components/maps/map-markers-buttons';
 import Map2 from '../components/maps/map-infobox';
 import Map3 from '../components/maps/map-clusterer';
-
 import MapContainer from '../components/maps/clusterer/MapContainer';
-
-import ScrollToTop from 'react-scroll-to-top';
-
-// ### - Test
-
 import Map4 from '../components/maps/current-location';
-
 import Map5 from '../components/maps/map-kml';
-
 import Map6 from '../components/maps/map-marker-clustering';
 import Map7 from '../components/maps/pan-current-location';
 import Map8 from '../components/maps/map-search-box';
@@ -58,7 +55,6 @@ const IndexPage = () => {
     }
   `);
 
-  // console.log ('line:1', strapiGlobal);
 
   return (
     <Layout>
@@ -79,36 +75,21 @@ const IndexPage = () => {
       {/* <Seperate /> */}
       {/* <Hero1 /> */}
       {/* <Seperate /> */}
-
       {/* <E1 /> */}
 
-      {/* ### */}
+    
 
-      {/* <Map5 /> */}
-
+      <Map5 />
 
       <Map1 />
 
-      {/* ### */}
-
       <Map2 />
-
-      {/* ### */}
-
-      {/* ### */}
 
       <MapContainer />
 
-      {/* ### */}
-
-      {/* ### */}
-
       <Map3 />
 
-
       <Map6 />
-
-      {/* ### - Test */}
 
       <Map4 />
 
@@ -117,24 +98,13 @@ const IndexPage = () => {
       <Map8 />
 
 
-      {/* ### - Test */}
 
-
-
-
-
-
-
-
-      {/* ### - Test */}
-
-      {/* ### - Test */}
 
       {/* <Overview /> */}
       {/* <Content3 /> */}
       {/* <Content3 /> */}
 
-      <Grid />
+      {/* <Grid /> */}
 
       {/* <main>
         <ArticlesGrid articles={allStrapiArticle.nodes} />

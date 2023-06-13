@@ -130,6 +130,12 @@ function initAutocomplete () {
         {' '} Places Search Box {' '}
       </h1>
 
+      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
+        <div style={{width:"400px"}}>
+        The Places Search Box in Google Maps simplifies the process of finding specific places or businesses. It combines search functionality with map integration, autocomplete suggestions, and location context to provide users with relevant and convenient search results. Whether users are looking for a nearby restaurant, a specific address, or a popular landmark, the Places Search Box in Google Maps helps them easily discover and navigate to their desired destinations.
+        </div>
+      </div>
+
       <div
         className="kml"
         style={{display: 'flex', justifyContent: 'center', margin: '5px'}}

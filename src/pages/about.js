@@ -48,53 +48,78 @@ const contact = () => {
                 In our increasingly connected and mobile world, maps have become an essential tool for navigating and discovering the world around us. Google Maps, one of the most popular mapping services, has played a significant role in revolutionizing the way we interact with maps. However, it is the Google Maps API that truly unleashes the full potential of this platform, allowing developers to create innovative location-based services. In this article, we will delve into the Google Maps API, exploring its features, benefits, and the ways it has transformed the digital landscape.
               </p>
 
-              <p>What is the Google Maps API?</p>
+              <p style={{fontWeight: '700'}}>What is the Google Maps API?</p>
 
               <p style={{marginBottom: '10px'}}>
                 The Google Maps API, or Application Programming Interface, is a set of tools and services provided by Google that allows developers to embed Google Maps into their own applications and websites. By integrating the API, developers gain access to a wide range of functionalities, including map rendering, location search, route planning, and even street view.
               </p>
 
-              <p style={{marginBottom: '10px'}}>
+              <p style={{marginBottom: '10px', fontWeight: '700'}}>
                 Key Features and Capabilities
               </p>
 
               <p style={{marginBottom: '10px'}}>
-                Mapping and Geocoding:
+                <a style={{textDecoration: 'underline'}}>
+                  Mapping and Geocoding:
+                </a>
                 The API enables developers to embed dynamic maps into their applications, customize map styles, and overlay data layers. Furthermore, geocoding functionality allows the conversion of addresses into geographic coordinates and vice versa, enabling precise location identification.
               </p>
 
               <p style={{marginBottom: '10px'}}>
-                Directions and Routing:
+
+                <a style={{textDecoration: 'underline'}}>
+                  Directions and Routing:
+                </a>
+
                 With the Google Maps API, developers can offer users seamless access to accurate directions and routing information. This includes driving directions, transit routes, and walking or cycling paths, empowering users to navigate through various transportation options.
               </p>
 
               <p style={{marginBottom: '10px'}}>
-                Places and Local Search:
+                <a style={{textDecoration: 'underline'}}>
+                  Places and Local Search:
+                </a>
                 The API offers powerful place-related features, allowing developers to integrate local search functionality into their applications. This enables users to find nearby businesses, points of interest, restaurants, hotels, and more, providing a comprehensive local search experience.
               </p>
 
               <p style={{marginBottom: '10px'}}>
-                Street View:
+
+                <a style={{textDecoration: 'underline'}}> Street View:</a>
                 Google Maps' iconic Street View feature, which offers 360-degree panoramic images of locations worldwide, can also be accessed through the API. Developers can integrate Street View into their applications, providing users with an immersive street-level view of any given location.
               </p>
 
-              <p style={{marginBottom: '10px'}} />
-              Benefits and Impact
+              <p style={{marginBottom: '10px', fontWeight: '700'}}>
+                Benefits and Impact
+              </p>
 
               <p style={{marginBottom: '10px'}} />
-              Seamless Integration:
+
+              <a style={{textDecoration: 'underline'}}>
+                {' '}Seamless Integration:
+              </a>
+
               The Google Maps API offers a user-friendly and well-documented framework, making it easy for developers to integrate maps and location-based services into their applications. The API provides extensive documentation, tutorials, and support, reducing the learning curve for developers.
 
               <p style={{marginBottom: '10px'}} />
-              Improved User Experience:
+
+              <a style={{textDecoration: 'underline'}}>
+                {' '}Improved User Experience:
+              </a>
               By leveraging the Google Maps API, developers can enhance the user experience of their applications by providing intuitive and interactive maps, accurate directions, and rich place information. This results in increased user engagement and satisfaction.
 
               <p style={{marginBottom: '10px'}} />
-              Location-based Marketing and Business Insights:
+
+              <a style={{textDecoration: 'underline'}}>
+                {' '}Location-based Marketing and Business Insights:
+              </a>
+
               The API's local search capabilities enable businesses to leverage location data and target users based on their geographical context. This allows for more personalized and effective marketing strategies. Additionally, the API provides valuable business insights, such as popular search terms and user reviews, helping organizations make data-driven decisions.
 
               <p style={{marginBottom: '10px'}} />
-              Innovation and Integration:
+
+              <a style={{textDecoration: 'underline'}}>
+                {' '}Innovation and Integration:
+              </a>
+
               The Google Maps API has been a catalyst for innovation, driving the development of countless location-based applications. From ride-sharing services and travel planning platforms to real estate applications and delivery services, the API has opened up a world of possibilities for developers across industries.
 
               <p style={{marginBottom: '10px'}} />
@@ -105,12 +130,12 @@ const contact = () => {
           </div>
 
         </article>
-        <div
+        
+        {/* <div
           className="ui breadcrumb"
           style={{
             display: 'flex',
             justifyContent: 'center',
-            // marginBottom: '50px',
             marginTop: '50px',
             paddingBottom: '50px',
           }}
@@ -124,8 +149,7 @@ const contact = () => {
           <a aria-label="link" className="section " href="/index-all-recipes">
             Index
           </a>
-          {/* className="active section " */}
-        </div>
+        </div> */}
 
       </section>
     </Layout>

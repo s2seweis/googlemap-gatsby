@@ -84,12 +84,11 @@ const contact = () => {
         </article>
       </section>
 
-      <div
+      {/* <div
           className="ui breadcrumb"
           style={{
             display: 'flex',
             justifyContent: 'center',
-            // marginBottom: '50px',
             marginTop: '50px',
             paddingBottom:"50px"
           }}
@@ -101,8 +100,7 @@ const contact = () => {
 
           <div className="divider">/</div>
           <a aria-label="link" className="section " href="/index-all-recipes">Index</a>
-          {/* className="active section " */}
-        </div>
+        </div> */}
 
     </Layout>
   );
