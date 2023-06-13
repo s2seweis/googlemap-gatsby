@@ -19,3 +19,6 @@ Following maps are used:
  5.  Current Location
  6. Places Search Box
 
+
+## Next
+Replace the Sidebar
