@@ -21,6 +21,9 @@ Following maps are used:
 
 
 ## Next
-Replace the Sidebar
+- Replace the Sidebar
+- Add hidden Menu
+- Display React Hooks: useEffect, useMemo, useRef, useCallback
+- Add Sandbox or other Editor 
 
-Test###
+<!-- Test### -->
