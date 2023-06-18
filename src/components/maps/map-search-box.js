@@ -113,7 +113,7 @@ function initAutocomplete () {
   // ###
 
   return (
-    <div className="kml-level1">
+    <div className="kml-level1" style={{marginBottom:"15px"}}>
 
       <h1
         style={{
