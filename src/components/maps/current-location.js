@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { usePosition } from "use-position";
 
+import {Button} from 'react-bootstrap';
+
+
 const defaultMapConfig = {
   gestureHandling: "greedy",
   options: {
@@ -62,10 +65,14 @@ export default function Map4() {
       </h1>
 
       <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div style={{width:"400px"}}>
+        <div style={{width:"400px", textAlign:"justify"}}>
         Current location refers to the real-time geographic position of a user at a given moment. Google Maps provides functionality to determine and display the user's current location on the map, allowing for various location-based services and features.
-        The current location functionality in Google Maps enhances the user experience by providing real-time location information and enabling various location-based services. By utilizing the user's current location, Google Maps helps users navigate, explore nearby areas, and access relevant information tailored to their geographic position.
         </div>
+      </div>
+
+      <div className='origin-button' style={{margin:"auto", display:"flex", justifyContent:"center", marginBottom:"15px"}}>
+        {/* ### - Test: Bootstrap Button */}
+      <Button href="https://developers.google.com/maps/documentation/javascript/geolocation" variant="primary">Read More</Button>
       </div>
 
 

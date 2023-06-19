@@ -41,38 +41,7 @@ const Grid = () => {
 
   
       
-      {/* <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '}Places Search Box{' '}
-      </h1> */}
-      {/* <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '}Waypoints in Directions{' '}
-      </h1> */}
-
-      {/* <ArticlesGrid articles={allStrapiArticle.nodes} /> */}
-
-      {/* <h3>Coming soon!</h3> */}
+    
 
       <div
         className="ui breadcrumb"

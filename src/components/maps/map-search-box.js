@@ -5,6 +5,9 @@ import {GoogleMap, useJsApiLoader} from '@react-google-maps/api';
 
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
 
+import {Button} from 'react-bootstrap';
+
+
 const containerStyle = {
   width: '400px',
   height: '400px',
@@ -131,9 +134,14 @@ function initAutocomplete () {
       </h1>
 
       <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div style={{width:"400px"}}>
-        The Places Search Box in Google Maps simplifies the process of finding specific places or businesses. It combines search functionality with map integration, autocomplete suggestions, and location context to provide users with relevant and convenient search results. Whether users are looking for a nearby restaurant, a specific address, or a popular landmark, the Places Search Box in Google Maps helps them easily discover and navigate to their desired destinations.
+        <div style={{width:"400px", textAlign:"justify"}}>
+        The Places Search Box in Google Maps simplifies the process of finding specific places or businesses. It combines search functionality with map integration, autocomplete suggestions, and location context to provide users with relevant and convenient search results. 
         </div>
+      </div>
+
+      <div className='origin-button' style={{margin:"auto", display:"flex", justifyContent:"center", marginBottom:"15px"}}>
+        {/* ### - Test: Bootstrap Button */}
+      <Button href="https://developers.google.com/maps/documentation/javascript/examples/places-searchbox" variant="primary">Read More</Button>
       </div>
 
       <div

@@ -5,6 +5,9 @@ import {GoogleMap, useJsApiLoader} from '@react-google-maps/api';
 
 import {GoogleMapProvider} from '@ubilabs/google-maps-react-hooks';
 
+import Button from 'react-bootstrap/Button';
+
+
 const containerStyle = {
   width: '400px',
   height: '400px',
@@ -79,33 +82,7 @@ function Map5 () {
   return (
     <div className="kml-level1">
 
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '} Introduction {' '}
-      </h1>
-
-      <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div className="linebreak" style={{width: '400px'}}>
-         
-         <p>Following sources were used for building this website:</p>
-         <p>https://developers.google.com/maps/documentation/javascript/overview</p>
-         <p>https://www.npmjs.com/package/@react-google-maps/api</p>
-         <p>https://www.npmjs.com/package/google-map-react</p>
-        
-        
-        </div>
-      </div>
-
+  
       <h1
         style={{
           textAlign: 'center',
@@ -122,14 +99,18 @@ function Map5 () {
       </h1>
 
       <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div style={{width: '400px'}}>
+        <div style={{width: '400px', textAlign:"justify"}}>
           KML, which stands for Keyhole Markup Language, is a file format used for displaying geographic data in mapping applications, with Google Maps being one of the popular platforms that supports it.
 
-          KML files contain a combination of structured data and markup tags that define various geographical features such as points, lines, polygons, and overlays. These features can include coordinates, descriptions, styles, icons, and other relevant information.
-
-          With Google Maps, you can import KML files to visualize and interact with geographic data.
+          KML files contain a combination of structured data and markup tags that define various geographical features such as points, lines, polygons, and overlays. 
           {' '}
         </div>
+
+
+      </div>
+      <div className='origin-button' style={{margin:"auto", display:"flex", justifyContent:"center", marginBottom:"15px"}}>
+        {/* ### - Test: Bootstrap Button */}
+      <Button href="https://developers.google.com/maps/documentation/javascript/kml" variant="primary">Read More</Button>
       </div>
 
       <div
