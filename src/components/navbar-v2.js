@@ -52,14 +52,14 @@ const Navbar1 = ({toggleSidebar}) => {
 
         <div className="nav-title">
 
-          <button
+          {/* <button
             style={{marginLeft: '15px'}}
             type="button"
             className="toggle-btn"
             onClick={toggleSidebar}
           >
             <HiMenuAlt2 />
-          </button>
+          </button> */}
 
           <h2
             className="h2-nav-title"

@@ -1,11 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Footer from './footer';
-// import Navbar from './navbar';
 import Navbar1 from './navbar-v2';
 
 import Sidebar from './sidebar';
-
-// import MenuBurger from './burger-menu';
 
 import CookieConsent from 'react-cookie-consent';
 
@@ -18,28 +15,14 @@ import {FaYoutube} from 'react-icons/fa';
 
 // ###
 
+import {Sidebar3} from './sidebar3';
+// import Sidebar4 from './sidebar4';
+import Sidebar5 from './sidebar5';
+
+// ###
+
 const Layout = ({children}) => {
   const scrolled = useRef (null);
-
-  // useEffect (() => {
-  //   const headID = document.getElementsByTagName ('head')[0];
-
-  //   document.addEventListener ('scroll', function (e) {
-  //     if (!scrolled.current) {
-  //       scrolled.current = true;
-
-  //       // Google Ads
-  //       const gaScript = document.createElement ('script');
-  //       gaScript.async = true;
-  //       gaScript.crossorigin = 'anonymous';
-  //       gaScript['data-ad-client'] = '5912939817167412';
-  //       gaScript.src =
-  //         'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-  //       gaScript.type = 'text/javascript';
-  //       headID.appendChild (gaScript);
-  //     }
-  //   });
-  // }, []);
 
   const [isOpen, setIsOpen] = useState (false);
 
@@ -50,11 +33,8 @@ const Layout = ({children}) => {
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
 
-
       {/* ###Side Component - Making an own Component out of it */}
-      <div className="social-media-left-side" 
-      // style={{fontSize: '2.2rem'}}
-      >
+      <div className="social-media-left-side">
 
         <a
           aria-label="link"
@@ -81,8 +61,6 @@ const Layout = ({children}) => {
         >
           <span><FaYoutube /></span>
         </a>
-        
-        
 
       </div>
 
@@ -97,7 +75,6 @@ const Layout = ({children}) => {
           style={{background: '#0d6efd'}}
           buttonStyle={{color: '#4e503b', fontSize: '13px'}}
           expires={150}
-          
         >
           This website uses cookies to enhance the user experience.
           <span style={{fontSize: '10px'}}>
@@ -121,9 +98,12 @@ const Layout = ({children}) => {
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
         <Navbar1 toggleSidebar={toggleSidebar} />
-        {/* <Navbar /> */}
 
-        {/* <MenuBurger/> */}
+        {/* <Sidebar3 /> */}
+        {/* <Sidebar4 /> */}
+        <Sidebar5 />
+
+        {/* ### */}
 
         {children}
       </div>

@@ -20,7 +20,7 @@ import Intro from '../components/intro';
 
 // ### - Style
 import 'semantic-ui-css/semantic.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ### - Maps
 import Map1 from '../components/maps/map-markers-buttons';
@@ -57,7 +57,7 @@ const IndexPage = () => {
 
       <ScrollToTop
         smooth
-        color="#708d3e"
+        color="#0d6efd"
         style={{
           display: 'flex',
           justifyContent: 'center',
