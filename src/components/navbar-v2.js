@@ -16,6 +16,8 @@ import {Link} from 'gatsby';
 import Sidebar from '../components/sidebar';
 
 import '../styles/burger.css';
+
+import Sidebar5 from './sidebar5';
 // ###
 
 import {
@@ -41,7 +43,9 @@ const Navbar1 = ({toggleSidebar}) => {
           {/* <img src={logo} alt="web dev" /> */}
           <a href="/">
             {/* <img src={logo5} alt="web dev" /> */}
-            <span style={{fontSize:"5rem"}}><SiGooglemaps style={{color:"black"}}/></span>
+            <span style={{fontSize: '5rem'}}>
+              <SiGooglemaps style={{color: 'black'}} />
+            </span>
           </a>
 
           {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
@@ -61,6 +65,8 @@ const Navbar1 = ({toggleSidebar}) => {
             <HiMenuAlt2 />
           </button> */}
 
+          <Sidebar5 />
+
           <h2
             className="h2-nav-title"
             style={{
@@ -68,6 +74,7 @@ const Navbar1 = ({toggleSidebar}) => {
               justifyContent: 'center',
               // fontFamily: 'Lobster Two',
               width: '100%',
+              margin: 'auto',
             }}
           >
             {/* The Solace Life */}

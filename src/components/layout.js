@@ -95,13 +95,13 @@ const Layout = ({children}) => {
 
         </CookieConsent>
 
-        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
 
         <Navbar1 toggleSidebar={toggleSidebar} />
 
         {/* <Sidebar3 /> */}
         {/* <Sidebar4 /> */}
-        <Sidebar5 />
+        {/* <Sidebar5 /> */}
 
         {/* ### */}
 
