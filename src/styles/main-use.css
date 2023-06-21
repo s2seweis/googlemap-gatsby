@@ -1873,3 +1873,16 @@ button.custom-map1-control-button {
 .linebreak {
   line-break: anywhere;
 }
+
+
+
+.navbar6{
+display: block;
+}
+
+@media screen and (min-width: 772px) {
+  .navbar6 {
+    display: none;
+  }
+
+}

@@ -28,6 +28,7 @@
     "@ubilabs/google-maps-react-hooks": "^1.5.1",
     "awesome-react-icons": "^1.4.8",
     "bootstrap": "^5.2.3",
+    "components": "^0.1.0",
     "eslint-config-google": "^0.14.0",
     "gatsby": "^4.6.1",
     "gatsby-omni-font-loader": "^2.0.2",
@@ -58,6 +59,8 @@
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
     "slick-carousel": "^1.8.1",
+    "styled": "^1.0.0",
+    "styled-components": "^6.0.0-rc.3",
     "use-position": "1.0.0",
     "uuid": "7.0.3"
   },

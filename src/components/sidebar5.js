@@ -9,19 +9,25 @@ import {use} from '../styles/bootstrap.css';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
-function Sidebar5 () {
-  const [show, setShow] = useState (false);
+// function Sidebar5 (handleClose, show) {
 
-  const handleClose = () => setShow (false);
-  const handleShow = () => setShow (true);
+  const Sidebar5 = (handleClose, show) => {
+    
+  // const [show, setShow] = useState (false);
+
+  // const handleClose = () => setShow (false);
+  // const handleShow = () => setShow (true);
+
+  console.log("line:4000", handleClose.handleClose);
+  console.log("line:6000", handleClose.show);
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
+      {/* <Button variant="primary" onClick={handleShow}>
         Launch
-      </Button>
+      </Button> */}
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas show={handleClose.show} onHide={handleClose.handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>

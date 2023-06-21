@@ -19,6 +19,8 @@ import {Sidebar3} from './sidebar3';
 // import Sidebar4 from './sidebar4';
 import Sidebar5 from './sidebar5';
 
+import Sidebar6 from '../components/sidebar6/sidebar6';
+
 // ###
 
 const Layout = ({children}) => {
@@ -29,6 +31,14 @@ const Layout = ({children}) => {
   const toggleSidebar = () => {
     setIsOpen (!isOpen);
   };
+
+  // ###
+  const [show, setShow] = useState (false);
+  console.log("line:5000",show );
+  const handleClose = () => setShow (false);
+  console.log("line:3000", handleClose);
+  const handleShow = () => setShow (true);
+  // ###
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
@@ -97,11 +107,14 @@ const Layout = ({children}) => {
 
         {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
 
-        <Navbar1 toggleSidebar={toggleSidebar} />
+        <Navbar1 toggleSidebar={toggleSidebar} handleShow={handleShow} />
+
+        <Sidebar6 />
+
 
         {/* <Sidebar3 /> */}
         {/* <Sidebar4 /> */}
-        {/* <Sidebar5 /> */}
+        <Sidebar5 handleClose={handleClose} show={show}    />
 
         {/* ### */}
 

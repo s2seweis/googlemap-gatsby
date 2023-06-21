@@ -3,7 +3,7 @@ import React from 'react';
 import logo5 from '../assets/images/logo5.png';
 
 // ###open
-// import {FaAlignRight} from 'react-icons/fa';
+import {FaAlignJustify} from 'react-icons/fa';
 import {HiMenuAlt2} from 'react-icons/hi';
 
 import pageLinks from '../constans/links';
@@ -15,9 +15,11 @@ import {Link} from 'gatsby';
 
 import Sidebar from '../components/sidebar';
 
+import Button from 'react-bootstrap/Button';
+
 import '../styles/burger.css';
 
-import Sidebar5 from './sidebar5';
+// ### - Test: Offcanvas
 // ###
 
 import {
@@ -33,9 +35,9 @@ import {
 
 import {SiGooglemaps} from 'react-icons/si';
 
-const Navbar1 = ({toggleSidebar}) => {
+const Navbar1 = ({toggleSidebar, handleShow}) => {
   return (
-    <nav style={{position: 'sticky'}} className="navbar">
+    <nav style={{position: 'sticky', zIndex:"5"}} className="navbar">
       <div className="nav-center">
 
         <div className="nav-header">
@@ -49,23 +51,31 @@ const Navbar1 = ({toggleSidebar}) => {
           </a>
 
           {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-            <FaAlignRight />
+            <FaAlignJustify />
           </button> */}
+
+        
 
         </div>
 
+        {/* <Button
+          variant="primary"
+          onClick={handleShow}
+          style={{fontSize: '1.5rem'}}
+        >
+          <FaAlignJustify />
+        </Button> */}
+
         <div className="nav-title">
 
-          {/* <button
-            style={{marginLeft: '15px'}}
-            type="button"
+        <Button
             className="toggle-btn"
-            onClick={toggleSidebar}
+            variant="primary"
+            onClick={handleShow}
+            style={{fontSize: '1.5rem'}}
           >
-            <HiMenuAlt2 />
-          </button> */}
-
-          <Sidebar5 />
+            <FaAlignJustify />
+          </Button>
 
           <h2
             className="h2-nav-title"

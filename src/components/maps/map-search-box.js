@@ -30,7 +30,7 @@ const mapOptions = {
 
 function initAutocomplete () {
   const [map, setMap] = React.useState (null);
-  console.log ('line:1000', map);
+  // console.log ('line:1000', map);
 
   const bounds = map;
 

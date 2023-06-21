@@ -17,7 +17,6 @@ import E1 from '../components/e2';
 import ScrollToTop from 'react-scroll-to-top';
 import Intro from '../components/intro';
 
-
 // ### - Style
 import 'semantic-ui-css/semantic.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +32,8 @@ import Map6 from '../components/maps/map-marker-clustering';
 import Map7 from '../components/maps/pan-current-location';
 import Map8 from '../components/maps/map-search-box';
 
+// ### - Test: Sidebar6
+// import Sidebar6 from '../components/sidebar6/sidebar6';
 
 const IndexPage = () => {
   const {allStrapiArticle, strapiGlobal} = useStaticQuery (graphql`
@@ -48,7 +49,6 @@ const IndexPage = () => {
       }
     }
   `);
-
 
   return (
     <Layout>
@@ -71,8 +71,6 @@ const IndexPage = () => {
       {/* <Seperate /> */}
       {/* <E1 /> */}
 
-    
-
       <Intro />
       <Map5 />
 
@@ -92,8 +90,9 @@ const IndexPage = () => {
 
       <Map8 />
 
-
-
+      {/* ### */}
+      {/* <Sidebar6 /> */}
+      {/* ### */}
 
       {/* <Overview /> */}
       {/* <Content3 /> */}
