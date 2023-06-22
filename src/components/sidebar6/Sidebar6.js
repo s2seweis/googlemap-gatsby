@@ -19,7 +19,6 @@ const NavIcon = styled.a`
   margin-left: 2rem;
   font-size: 2rem;
   height: 80px;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
 `;
@@ -41,20 +40,25 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false);
+const Sidebar = ( sidebar, setSidebar ) => {
 
-  const showSidebar = () => setSidebar(!sidebar);
+  // const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => sidebar.setSidebar(!sidebar.sidebar);
+
+  console.log("line:101", showSidebar );
+  console.log("line:101.1", sidebar.sidebar );
+  console.log("line:101.2", sidebar.setSidebar );
 
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav className='navbar6' style={{}}>
+        {/* <Nav className='navbar6' style={{}}>
           <NavIcon href='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-        </Nav>
-        <SidebarNav sidebar={sidebar}>
+        </Nav> */}
+        <SidebarNav sidebar={sidebar.sidebar}>
           <SidebarWrap>
             <NavIcon href='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />

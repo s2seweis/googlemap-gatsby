@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 // import logo from '../assets/images/logo.svg';
 import logo5 from '../assets/images/logo5.png';
 
@@ -35,9 +35,29 @@ import {
 
 import {SiGooglemaps} from 'react-icons/si';
 
-const Navbar1 = ({toggleSidebar, handleShow}) => {
+const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
+  // Test:Overlay
+  // ### - get a reference
+
+  const [style, setStyle] = useState ('overlay');
+
+  // ### - Extend const
+  const showSidebar = () => {
+    setSidebar (!sidebar);
+
+    setStyle ('overlay2');
+  };
+
+  console.log ('line:103', sidebar);
+  console.log ('line:103.1', setSidebar);
+  console.log ('line:103.2', showSidebar);
+
+  // console.log ('line:100', showSidebar);
   return (
-    <nav style={{position: 'sticky', zIndex:"5"}} className="navbar">
+    <nav style={{position: 'sticky', zIndex: '5'}} className="navbar">
+
+      <div className={style} />
+
       <div className="nav-center">
 
         <div className="nav-header">
@@ -50,11 +70,9 @@ const Navbar1 = ({toggleSidebar, handleShow}) => {
             </span>
           </a>
 
-          {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
+          <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignJustify />
-          </button> */}
-
-        
+          </button>
 
         </div>
 
@@ -68,14 +86,45 @@ const Navbar1 = ({toggleSidebar, handleShow}) => {
 
         <div className="nav-title">
 
-        <Button
+          {/* ### - Sidebar:5 */}
+          <Button
             className="toggle-btn"
             variant="primary"
             onClick={handleShow}
-            style={{fontSize: '1.5rem'}}
+            style={{fontSize: '1.5rem', background: 'yellow'}}
           >
             <FaAlignJustify />
           </Button>
+          {/* ### */}
+
+          {/* ### - Sidebar:6 */}
+          {/* <div className={style}> */}
+          <Button
+            className="toggle-btn"
+            variant="secondary"
+            onClick={showSidebar}
+            style={{
+              fontSize: '1.5rem',
+              width: 'fit-content',
+              background: 'red',
+              display: 'block',
+            }}
+          >
+            <FaAlignJustify />
+          </Button>
+          {/* </div> */}
+          {/* ### - Sidebar:6 */}
+
+          {/* ### - Sidebar*/}
+          <Button
+            style={{background: 'green', fontSize: '1.5rem'}}
+            variant="success"
+            className="toggle-btn"
+            onClick={toggleSidebar}
+          >
+            <FaAlignJustify />
+          </Button>
+          {/* ### - Sidebar */}
 
           <h2
             className="h2-nav-title"

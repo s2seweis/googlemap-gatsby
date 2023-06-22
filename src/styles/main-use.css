@@ -369,6 +369,26 @@ Sidebar
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
+
+/* Test */
+  /* .sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #aab000, #db8bed);
+    
+  } */
+
+
+
+
+
 .sidebar-links li {
   padding: 1px;
   opacity: 0;
@@ -1874,7 +1894,7 @@ button.custom-map1-control-button {
   line-break: anywhere;
 }
 
-
+/* ### */
 
 .navbar6{
 display: block;
@@ -1885,4 +1905,29 @@ display: block;
     display: none;
   }
 
+}
+
+
+/* ### - Overlay: Test */
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.overlay2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
 }

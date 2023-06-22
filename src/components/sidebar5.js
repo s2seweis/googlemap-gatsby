@@ -18,8 +18,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
   // const handleClose = () => setShow (false);
   // const handleShow = () => setShow (true);
 
-  console.log("line:4000", handleClose.handleClose);
-  console.log("line:6000", handleClose.show);
+  // console.log("line:4000", handleClose.handleClose);
+  // console.log("line:6000", handleClose.show);
 
   return (
     <div>

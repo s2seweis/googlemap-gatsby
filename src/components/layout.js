@@ -2,25 +2,20 @@ import React, {useState, useEffect, useRef} from 'react';
 import Footer from './footer';
 import Navbar1 from './navbar-v2';
 
-import Sidebar from './sidebar';
 
 import CookieConsent from 'react-cookie-consent';
 
-// ###
-
+// ### - Icons
 import {FaFacebookSquare} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 // import {FaTiktok} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
-
 // ###
 
-import {Sidebar3} from './sidebar3';
-// import Sidebar4 from './sidebar4';
+// ### - Sidebars
+import Sidebar from './sidebar';
 import Sidebar5 from './sidebar5';
-
 import Sidebar6 from '../components/sidebar6/sidebar6';
-
 // ###
 
 const Layout = ({children}) => {
@@ -34,14 +29,29 @@ const Layout = ({children}) => {
 
   // ###
   const [show, setShow] = useState (false);
-  console.log("line:5000",show );
+  // console.log("line:5000",show );
   const handleClose = () => setShow (false);
-  console.log("line:3000", handleClose);
+  // console.log("line:3000", handleClose);
   const handleShow = () => setShow (true);
+  // ###
+
+  // ###
+
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+  console.log("line:102", showSidebar );
+  console.log("line:102.1", sidebar );
+  console.log("line:102.2", setSidebar );
+
+
+
   // ###
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
+
+      {/* <div className='overlay'>Test</div> */}
 
       {/* ###Side Component - Making an own Component out of it */}
       <div className="social-media-left-side">
@@ -105,16 +115,16 @@ const Layout = ({children}) => {
 
         </CookieConsent>
 
-        {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
-        <Navbar1 toggleSidebar={toggleSidebar} handleShow={handleShow} />
+        <Navbar1 toggleSidebar={toggleSidebar} handleShow={handleShow} sidebar={sidebar} setSidebar={setSidebar}  />
 
-        <Sidebar6 />
+        <Sidebar6 sidebar={sidebar} setSidebar={setSidebar}   />
 
 
         {/* <Sidebar3 /> */}
         {/* <Sidebar4 /> */}
-        <Sidebar5 handleClose={handleClose} show={show}    />
+        <Sidebar5 handleClose={handleClose} show={show} showSidebar={showSidebar}    />
 
         {/* ### */}
 

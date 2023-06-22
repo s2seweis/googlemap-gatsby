@@ -100,6 +100,7 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
         </div> */}
 
       </div>
+      {/* <div style={{width:"60%", background:"red", opacity:"0.1"}}>Test</div> */}
     </aside>
   );
 };
