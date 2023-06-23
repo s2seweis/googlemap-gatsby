@@ -48,6 +48,12 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
     setStyle ('overlay2');
   };
 
+  // const hideSidebar = () => {
+  //   setSidebar (!sidebar);
+
+  //   setStyle ('overlay');
+  // };
+
   console.log ('line:103', sidebar);
   console.log ('line:103.1', setSidebar);
   console.log ('line:103.2', showSidebar);
@@ -56,7 +62,10 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
   return (
     <nav style={{position: 'sticky', zIndex: '5'}} className="navbar">
 
-      <div className={style} />
+      {/* <div 
+      className={style} 
+      onClick={hideSidebar} 
+      /> */}
 
       <div className="nav-center">
 
@@ -70,9 +79,9 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
             </span>
           </a>
 
-          <button type="button" className="toggle-btn" onClick={toggleSidebar}>
+          {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignJustify />
-          </button>
+          </button> */}
 
         </div>
 
@@ -107,7 +116,6 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
               fontSize: '1.5rem',
               width: 'fit-content',
               background: 'red',
-              display: 'block',
             }}
           >
             <FaAlignJustify />

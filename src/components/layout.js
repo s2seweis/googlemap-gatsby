@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from 'react';
 import Footer from './footer';
 import Navbar1 from './navbar-v2';
 
-
 import CookieConsent from 'react-cookie-consent';
 
 // ### - Icons
@@ -17,6 +16,10 @@ import Sidebar from './sidebar';
 import Sidebar5 from './sidebar5';
 import Sidebar6 from '../components/sidebar6/sidebar6';
 // ###
+
+import Button from 'react-bootstrap/Button';
+import {FaAlignJustify} from 'react-icons/fa';
+
 
 const Layout = ({children}) => {
   const scrolled = useRef (null);
@@ -37,23 +40,54 @@ const Layout = ({children}) => {
 
   // ###
 
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState (false);
 
-  const showSidebar = () => setSidebar(!sidebar);
-  console.log("line:102", showSidebar );
-  console.log("line:102.1", sidebar );
-  console.log("line:102.2", setSidebar );
+  // const showSidebar = () => setSidebar(!sidebar);
+  // console.log("line:102", showSidebar );
+  // console.log("line:102.1", sidebar );
+  // console.log("line:102.2", setSidebar );
 
+  const [style, setStyle] = useState ('overlay');
 
+  // ### - Extend const
+  const showSidebar = () => {
+    setSidebar (!sidebar);
+
+    setStyle ('overlay2');
+  };
+
+  const hideSidebar = () => {
+    setSidebar (!sidebar);
+
+    setStyle ('overlay');
+  };
+
+  console.log ('line:110', hideSidebar);
 
   // ###
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
 
-      {/* <div className='overlay'>Test</div> */}
+      {/* <div className={style} onClick={hideSidebar} />
+
+      <Button
+        className="toggle-btn"
+        variant="secondary"
+        onClick={showSidebar}
+        style={{
+          fontSize: '1.5rem',
+          width: 'fit-content',
+          background: 'red',
+        }}
+      >
+        <FaAlignJustify />
+      </Button> */}
 
       {/* ###Side Component - Making an own Component out of it */}
+
+
+      
       <div className="social-media-left-side">
 
         <a
@@ -117,14 +151,26 @@ const Layout = ({children}) => {
 
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
-        <Navbar1 toggleSidebar={toggleSidebar} handleShow={handleShow} sidebar={sidebar} setSidebar={setSidebar}  />
+        <Navbar1
+          toggleSidebar={toggleSidebar}
+          handleShow={handleShow}
+          sidebar={sidebar}
+          setSidebar={setSidebar}
+        />
 
-        <Sidebar6 sidebar={sidebar} setSidebar={setSidebar}   />
-
+        <Sidebar6
+          sidebar={sidebar}
+          setSidebar={setSidebar}
+          hideSidebar={hideSidebar}
+        />
 
         {/* <Sidebar3 /> */}
         {/* <Sidebar4 /> */}
-        <Sidebar5 handleClose={handleClose} show={show} showSidebar={showSidebar}    />
+        <Sidebar5
+          handleClose={handleClose}
+          show={show}
+          showSidebar={showSidebar}
+        />
 
         {/* ### */}
 
