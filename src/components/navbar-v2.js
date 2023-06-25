@@ -17,7 +17,9 @@ import Sidebar from '../components/sidebar';
 
 import Button from 'react-bootstrap/Button';
 
-import Sidebar6 from './sidebar6/sidebar6';
+
+
+import Sidebar6 from '../components/sidebar6/Sidebar6';
 
 import '../styles/burger.css';
 
