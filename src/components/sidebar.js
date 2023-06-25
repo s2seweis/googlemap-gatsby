@@ -34,7 +34,7 @@ const Sidebar = ({isOpen, toggleSidebar, toggleHideSidebar}) => {
         style={{marginTop: '60px', width: '100%'}}
       >
 
-        <div
+        {/* <div
           className="sidebar-social-links-margin"
           style={{marginTop: 'auto'}}
         >
@@ -51,7 +51,7 @@ const Sidebar = ({isOpen, toggleSidebar, toggleHideSidebar}) => {
             })}
           </ul>
 
-        </div>
+        </div> */}
 
         {/* ### - Test: SubMenu */}
 
