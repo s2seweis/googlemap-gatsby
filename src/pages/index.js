@@ -32,8 +32,7 @@ import Map6 from '../components/maps/map-marker-clustering';
 import Map7 from '../components/maps/pan-current-location';
 import Map8 from '../components/maps/map-search-box';
 
-// ### - Test: Sidebar6
-// import Sidebar6 from '../components/sidebar6/sidebar6';
+
 
 const IndexPage = () => {
   const {allStrapiArticle, strapiGlobal} = useStaticQuery (graphql`

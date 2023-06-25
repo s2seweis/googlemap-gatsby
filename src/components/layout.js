@@ -14,7 +14,6 @@ import {FaYoutube} from 'react-icons/fa';
 // ### - Sidebars
 import Sidebar from './sidebar';
 import Sidebar5 from './sidebar5';
-import Sidebar6 from '../components/sidebar6/sidebar6';
 // ###
 
 import Button from 'react-bootstrap/Button';
