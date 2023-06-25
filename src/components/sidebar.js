@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import links from '../constans/links-sidemenu';
 import socialLinks from '../constans/social_links';
 import {Link} from 'gatsby';
@@ -6,19 +6,27 @@ import {Link} from 'gatsby';
 // ###close
 import {FaTimes} from 'react-icons/fa';
 
-// import hero from "../assets/images/hero.svg"
+import {SidebarData} from './sidebar6/SidebarData';
+import SubMenu from './sidebar6/SubMenu';
 
-// import {FaFacebookSquare} from 'react-icons/fa';
-// import {FaInstagram} from 'react-icons/fa';
-// import {FaTiktok} from 'react-icons/fa';
-// import {FaYoutube} from 'react-icons/fa';
-// import logo5 from '../assets/images/logo5.png';
+const Sidebar = ({isOpen, toggleSidebar, toggleHideSidebar}) => {
+  // const [isOpen, setIsOpen] = useState (false);
 
+  // const toggleSidebar = () => {
+  //   setIsOpen (!isOpen);
+  // };
+  console.log("line:1", isOpen);
 
-const Sidebar = ({isOpen, toggleSidebar}) => {
   return (
     <aside className={isOpen ? 'sidebar show-sidebar' : 'sidebar'}>
-      <button className="close-btn" alt="close" type="button" onClick={toggleSidebar}>
+    {/* <aside className={isOpen ? 'sidebar show-sidebar' & 'overlay' : 'sidebar' & 'overlay2'}> */}
+    
+      <button
+        className="close-btn"
+        alt="close"
+        type="button"
+        onClick={isOpen ? toggleHideSidebar : toggleSidebar }
+      >
         <FaTimes />
       </button>
       <div
@@ -26,33 +34,10 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
         style={{marginTop: '60px', width: '100%'}}
       >
 
-        {/* <div className="nav-header-sidebar" style={{ height:"80px", width:"80px", margin:"auto" }}>
-
-          <a href="/">
-            <img src={logo5} alt="web dev" />
-          </a>
-
-   
-
-        </div> */}
-
-        {/* <img src="../assets/images/hero.svg"  className="about-img-svg" /> */}
-
-        {/* <div 
-      
-      style={{display:"flex", justifyContent:"center"}}
-      
-      className="sidebar-div">
-
-      <img 
-      
-      style={{width:"50%"}}
-      
-      src={hero} alt="web dev" />
-
-      </div> */}
-
-        <div className="sidebar-social-links-margin" style={{marginTop:"auto"}}>
+        <div
+          className="sidebar-social-links-margin"
+          style={{marginTop: 'auto'}}
+        >
 
           <ul className={isOpen ? 'sidebar-links' : null}>
             {links.map (link => {
@@ -68,7 +53,18 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
 
         </div>
 
-        <div className="sidebar-social-links-margin" style={{marginTop:"30px"}}>
+        {/* ### - Test: SubMenu */}
+
+        {SidebarData.map ((item, index) => {
+          return <SubMenu item={item} key={index} />;
+        })}
+
+        {/* ### - Test: SubMenu */}
+
+        <div
+          className="sidebar-social-links-margin"
+          style={{marginTop: '30px'}}
+        >
 
           <ul className={isOpen ? 'social-links sidebar-icons' : null}>
             {socialLinks.map (link => {

@@ -6,6 +6,8 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
+import Button from 'react-bootstrap/Button';
+
 
 const Nav = styled.div`
   background: red;
@@ -40,15 +42,12 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Sidebar = (  ) => {
+const Sidebar6 = ( 
+  // sidebar, setSidebar 
+  ) => {
 
-  // // const [sidebar, setSidebar] = useState(false);
-
-  // const showSidebar = () => sidebar.setSidebar(!sidebar.sidebar);
-
-  // console.log("line:101", showSidebar );
-  // console.log("line:101.1", sidebar.sidebar );
-  // console.log("line:101.2", sidebar.setSidebar );
+  // console.log("line:101.3", sidebar);
+  // console.log("line:101.4", setSidebar );
 
 
 
@@ -57,15 +56,8 @@ const Sidebar = (  ) => {
 
 
   const [sidebar, setSidebar] = useState (false);
-
-  // const showSidebar = () => setSidebar(!sidebar);
-  // console.log("line:102", showSidebar );
-  // console.log("line:102.1", sidebar );
-  // console.log("line:102.2", setSidebar );
-
   const [style, setStyle] = useState ('overlay');
 
-  // ### - Extend const
   const showSidebar = () => {
     setSidebar (!sidebar);
 
@@ -86,16 +78,18 @@ const Sidebar = (  ) => {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
 
-      <div className={style} onClick={hideSidebar} />
+      <div 
+      className={style} 
+      onClick={hideSidebar} />
 
         
         {/* <Nav className='navbar6' style={{}}> */}
 
         {/* <div className='where' style={{background:"yellow", zIndex:"10000"}}>
           Where???? */}
-          <NavIcon href='#'>
-            <FaIcons.FaBars style={{color:"black", background:"blue", padding:"5px", fontSize:"1.5rem", marginLeft:"20px"}} onClick={showSidebar} />
-          </NavIcon>
+          <Button className='toggle-btn' style={{color:"black", background:"orange", fontSize:"1.5rem"}} href='#'>
+            <FaIcons.FaBars className='icon-color' style={{color:"black"}}  onClick={showSidebar} />
+          </Button>
         {/* </div> */}
         {/* </Nav> */}
         <SidebarNav sidebar={sidebar}>
@@ -114,4 +108,4 @@ const Sidebar = (  ) => {
   );
 };
 
-export default Sidebar;
+export default Sidebar6;

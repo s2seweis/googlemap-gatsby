@@ -31,6 +31,7 @@ import Map5 from '../components/maps/map-kml';
 import Map6 from '../components/maps/map-marker-clustering';
 import Map7 from '../components/maps/pan-current-location';
 import Map8 from '../components/maps/map-search-box';
+import SubmenuTest from '../components/submenu';
 
 // ### - Test: Sidebar6
 // import Sidebar6 from '../components/sidebar6/sidebar6';
@@ -103,6 +104,8 @@ const IndexPage = () => {
       {/* <main>
         <ArticlesGrid articles={allStrapiArticle.nodes} />
       </main> */}
+
+      <SubmenuTest />
 
     </Layout>
   );

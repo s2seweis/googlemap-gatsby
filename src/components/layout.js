@@ -20,32 +20,34 @@ import Sidebar6 from '../components/sidebar6/sidebar6';
 import Button from 'react-bootstrap/Button';
 import {FaAlignJustify} from 'react-icons/fa';
 
-
 const Layout = ({children}) => {
   const scrolled = useRef (null);
+
+  // ### - Sidebar: Start
 
   const [isOpen, setIsOpen] = useState (false);
 
   const toggleSidebar = () => {
     setIsOpen (!isOpen);
+
+    setStyle ('overlay2');
   };
 
-  // ###
+  const toggleHideSidebar = () => {
+    setIsOpen (!isOpen);
+
+    setStyle ('overlay');
+  };
+  // ### - Sidebar: End
+
+  // ### - Sidebar:5 - Start
   const [show, setShow] = useState (false);
-  // console.log("line:5000",show );
   const handleClose = () => setShow (false);
-  // console.log("line:3000", handleClose);
   const handleShow = () => setShow (true);
-  // ###
+  // ### - Sidebar:5 - End
 
-  // ###
-
+  // ### - Sidebar: 6 - Start
   const [sidebar, setSidebar] = useState (false);
-
-  // const showSidebar = () => setSidebar(!sidebar);
-  // console.log("line:102", showSidebar );
-  // console.log("line:102.1", sidebar );
-  // console.log("line:102.2", setSidebar );
 
   const [style, setStyle] = useState ('overlay');
 
@@ -62,32 +64,19 @@ const Layout = ({children}) => {
     setStyle ('overlay');
   };
 
-  console.log ('line:110', hideSidebar);
+  // console.log ('line:3', sidebar);
+  // console.log ('line:4', setSidebar);
+  // console.log("line:3", showSidebar);
+  // console.log("line:4", hideSidebar);
+  // console.log("line:5", style);
 
-  // ###
+  // ### - Sidebar: 6 - End
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
 
-      {/* <div className={style} onClick={hideSidebar} />
+      <div className={style} onClick={toggleHideSidebar} />
 
-      <Button
-        className="toggle-btn"
-        variant="secondary"
-        onClick={showSidebar}
-        style={{
-          fontSize: '1.5rem',
-          width: 'fit-content',
-          background: 'red',
-        }}
-      >
-        <FaAlignJustify />
-      </Button> */}
-
-      {/* ###Side Component - Making an own Component out of it */}
-
-
-      
       <div className="social-media-left-side">
 
         <a
@@ -149,23 +138,25 @@ const Layout = ({children}) => {
 
         </CookieConsent>
 
-        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} toggleHideSidebar={toggleHideSidebar} />
 
         <Navbar1
+          isOpen={isOpen}
           toggleSidebar={toggleSidebar}
           handleShow={handleShow}
           sidebar={sidebar}
           setSidebar={setSidebar}
+          toggleHideSidebar={toggleHideSidebar}
         />
 
-        <Sidebar6
+        {/* <Sidebar6
           sidebar={sidebar}
           setSidebar={setSidebar}
-          hideSidebar={hideSidebar}
-        />
+          // showSidebar={showSidebar}
+          // hideSidebar={hideSidebar}
+          // style={style}
+        /> */}
 
-        {/* <Sidebar3 /> */}
-        {/* <Sidebar4 /> */}
         <Sidebar5
           handleClose={handleClose}
           show={show}

@@ -17,6 +17,8 @@ import Sidebar from '../components/sidebar';
 
 import Button from 'react-bootstrap/Button';
 
+import Sidebar6 from './sidebar6/sidebar6';
+
 import '../styles/burger.css';
 
 // ### - Test: Offcanvas
@@ -35,9 +37,18 @@ import {
 
 import {SiGooglemaps} from 'react-icons/si';
 
-const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
-  // Test:Overlay
-  // ### - get a reference
+const Navbar1 = ({
+  isOpen,
+  toggleSidebar,
+  toggleHideSidebar,
+  handleShow,
+  // showSidebar,
+  sidebar,
+  setSidebar
+}) => {
+  // console.log ('line:5', sidebar);
+  // console.log ('line:6', setSidebar);
+  console.log("line:2", isOpen);
 
   const [style, setStyle] = useState ('overlay');
 
@@ -48,24 +59,18 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
     setStyle ('overlay2');
   };
 
-  // const hideSidebar = () => {
-  //   setSidebar (!sidebar);
+  const hideSidebar = () => {
+    setSidebar (!sidebar);
 
-  //   setStyle ('overlay');
-  // };
+    setStyle ('overlay');
+  };
 
-  console.log ('line:103', sidebar);
-  console.log ('line:103.1', setSidebar);
-  console.log ('line:103.2', showSidebar);
-
-  // console.log ('line:100', showSidebar);
   return (
     <nav style={{position: 'sticky', zIndex: '5'}} className="navbar">
 
-      {/* <div 
-      className={style} 
-      onClick={hideSidebar} 
-      /> */}
+      {/* ### */}
+      <div className={style} onClick={hideSidebar} />
+      {/* ### */}
 
       <div className="nav-center">
 
@@ -93,14 +98,14 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
           <FaAlignJustify />
         </Button> */}
 
-        <div className="nav-title">
+        <div style={{marginLeft:"10px"}} className="nav-title">
 
           {/* ### - Sidebar:5 */}
           <Button
             className="toggle-btn"
             variant="primary"
             onClick={handleShow}
-            style={{fontSize: '1.5rem', background: 'yellow'}}
+            style={{fontSize: '1.5rem', background: 'yellow', marginRight:"5px"}}
           >
             <FaAlignJustify />
           </Button>
@@ -108,7 +113,7 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
 
           {/* ### - Sidebar:6 */}
           {/* <div className={style}> */}
-          <Button
+          {/* <Button
             className="toggle-btn"
             variant="secondary"
             onClick={showSidebar}
@@ -119,20 +124,25 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
             }}
           >
             <FaAlignJustify />
-          </Button>
+          </Button> */}
           {/* </div> */}
           {/* ### - Sidebar:6 */}
 
           {/* ### - Sidebar*/}
           <Button
-            style={{background: 'green', fontSize: '1.5rem'}}
+            style={{background: 'green', fontSize: '1.5rem', marginRight:"5px"}}
             variant="success"
             className="toggle-btn"
-            onClick={toggleSidebar}
+            onClick={isOpen ? toggleHideSidebar : toggleSidebar}
           >
             <FaAlignJustify />
           </Button>
           {/* ### - Sidebar */}
+
+
+          {/* <div  className='toggle-btn' > */}
+          <Sidebar6 />
+          {/* </div> */}
 
           <h2
             className="h2-nav-title"
@@ -142,6 +152,7 @@ const Navbar1 = ({toggleSidebar, handleShow, sidebar, setSidebar}) => {
               // fontFamily: 'Lobster Two',
               width: '100%',
               margin: 'auto',
+              fontSize:"revert"
             }}
           >
             {/* The Solace Life */}
