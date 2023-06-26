@@ -28,6 +28,7 @@
     "@ubilabs/google-maps-react-hooks": "^1.5.1",
     "awesome-react-icons": "^1.4.8",
     "bootstrap": "^5.2.3",
+    "classnames": "^2.3.2",
     "components": "^0.1.0",
     "eslint-config-google": "^0.14.0",
     "gatsby": "^4.6.1",

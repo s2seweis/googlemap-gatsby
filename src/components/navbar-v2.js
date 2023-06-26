@@ -23,6 +23,9 @@ import Sidebar6 from '../components/sidebar6/Sidebar6';
 
 import '../styles/burger.css';
 
+import classnames from "classnames";
+
+
 // ### - Test: Offcanvas
 // ###
 
@@ -46,13 +49,14 @@ const Navbar1 = ({
   handleShow,
   // showSidebar,
   sidebar,
-  setSidebar
+  setSidebar,
+  visible
 }) => {
   // console.log ('line:5', sidebar);
   // console.log ('line:6', setSidebar);
   console.log("line:2", isOpen);
 
-  const [style, setStyle] = useState ('overlay');
+  const [style1, setStyle] = useState ('overlay');
 
   // ### - Extend const
   const showSidebar = () => {
@@ -67,11 +71,27 @@ const Navbar1 = ({
     setStyle ('overlay');
   };
 
+
+  // ###
+
+
+
+
+
+
+
+
+
+  // ###
+
   return (
-    <nav style={{position: 'sticky', zIndex: '5'}} className="navbar">
+    <nav style={{ zIndex: '5'}} className={ classnames ("navbar", {"navbar--hidden":!visible}) }
+    
+    >
+    {/* <nav style={{position: 'sticky', zIndex: '5'}} className="navbar"> */}
 
       {/* ### */}
-      <div className={style} onClick={hideSidebar} />
+      <div className={style1} onClick={hideSidebar} />
       {/* ### */}
 
       <div className="nav-center">

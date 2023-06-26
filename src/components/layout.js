@@ -16,6 +16,8 @@ import Sidebar from './sidebar';
 import Sidebar5 from './sidebar5';
 // ###
 
+import Navbar100 from './navbarOnScroll/navbar';
+
 import Button from 'react-bootstrap/Button';
 import {FaAlignJustify} from 'react-icons/fa';
 
@@ -63,13 +65,27 @@ const Layout = ({children}) => {
     setStyle ('overlay');
   };
 
-  // console.log ('line:3', sidebar);
-  // console.log ('line:4', setSidebar);
-  // console.log("line:3", showSidebar);
-  // console.log("line:4", hideSidebar);
-  // console.log("line:5", style);
-
   // ### - Sidebar: 6 - End
+
+  // ### - SidebarOnScroll:Test1
+
+  const [yOffset, setYOffset] = useState (window.pageYOffset);
+  const [visible, setVisible] = useState (true);
+
+  useEffect (() => {
+    window.addEventListener ('scroll', handleScroll);
+    return () => window.removeEventListener ('scroll', handleScroll);
+  });
+
+  function handleScroll () {
+    const currentYOffset = window.pageYOffset;
+    const visible = yOffset > currentYOffset;
+
+    setYOffset (currentYOffset);
+    setVisible (visible);
+  }
+
+  // ### - SidebarOnScroll:Test1
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">
@@ -137,7 +153,13 @@ const Layout = ({children}) => {
 
         </CookieConsent>
 
-        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} toggleHideSidebar={toggleHideSidebar} />
+        <Sidebar
+          isOpen={isOpen}
+          toggleSidebar={toggleSidebar}
+          toggleHideSidebar={toggleHideSidebar}
+        />
+
+        {/* <Navbar100 visible={visible} /> */}
 
         <Navbar1
           isOpen={isOpen}
@@ -146,6 +168,7 @@ const Layout = ({children}) => {
           sidebar={sidebar}
           setSidebar={setSidebar}
           toggleHideSidebar={toggleHideSidebar}
+          visible={visible}
         />
 
         {/* <Sidebar6
