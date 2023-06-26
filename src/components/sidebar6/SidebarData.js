@@ -4,30 +4,35 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 
+import * as GrIcons from 'react-icons/gr';
+import * as CiIcons from 'react-icons/ci';
+import * as GiIcons from 'react-icons/gi';
+
+
 // ### JSON Object
 export const SidebarData = [
   {
-    title: 'Overview',
-    // path: '/overview',
+    title: 'Home',
+    path: '/',
     icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    // iconClosed: <RiIcons.RiArrowDownSFill />,
+    // iconOpened: <RiIcons.RiArrowUpSFill />,
 
-    subNav: [
-      {
-        title: 'Users',
-        path: '/overview/users',
-        icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Revenue',
-        path: '/overview/revenue',
-        icon: <IoIcons.IoIosPaper />
-      }
-    ]
+    // subNav: [
+    //   {
+    //     title: 'Users',
+    //     path: '/overview/users',
+    //     icon: <IoIcons.IoIosPaper />
+    //   },
+    //   {
+    //     title: 'Revenue',
+    //     path: '/overview/revenue',
+    //     icon: <IoIcons.IoIosPaper />
+    //   }
+    // ]
   },
   {
-    title: 'Reports',
+    title: 'Content',
     // path: '/',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -35,58 +40,68 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'About',
-        path: '/about',
-        icon: <IoIcons.IoIosPaper />,
+        title: 'useEffect',
+        path: '/useEffect',
+        icon: <GiIcons.GiPirateHook />,
         cName: 'sub-nav'
       },
       {
-        title: 'Contact',
+        title: 'useMemo',
         path: '/contact',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <GiIcons.GiPirateHook />,
         cName: 'sub-nav'
       },
       {
-        title: 'Copyright',
+        title: 'useReft',
         path: '/copyright',
-        icon: <IoIcons.IoIosPaper />
+        icon: <GiIcons.GiPirateHook />
+      },
+      {
+        title: 'useCallback',
+        path: '/copyright',
+        icon: <GiIcons.GiPirateHook />
       }
     ]
   },
+  // {
+  //   title: 'Products',
+  //   path: '/products',
+  //   icon: <FaIcons.FaCartPlus />
+  // },
+  // {
+  //   title: 'Team',
+  //   path: '/team',
+  //   icon: <IoIcons.IoMdPeople />
+  // },
   {
-    title: 'Products',
-    path: '/products',
-    icon: <FaIcons.FaCartPlus />
-  },
-  {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />
-  },
-  {
-    title: 'Messages',
+    title: 'About',
     // path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: <CiIcons.CiCircleMore />,
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Message 1',
-        path: '/messages/message1',
-        icon: <IoIcons.IoIosPaper />
+        title: 'About',
+        path: '/about',
+        icon: <FaIcons.FaHatWizard />
       },
       {
-        title: 'Message 2',
-        path: '/messages/message2',
-        icon: <IoIcons.IoIosPaper />
+        title: 'Contact',
+        path: '/contact',
+        icon: <GrIcons.GrContact />
+      },
+      {
+        title: 'Copyright',
+        path: '/copyright',
+        icon: <FaIcons.FaCopyright />
       }
     ]
   },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
-  }
+  // {
+  //   title: 'Support',
+  //   path: '/support',
+  //   icon: <IoIcons.IoMdHelpCircle />
+  // }
 ];

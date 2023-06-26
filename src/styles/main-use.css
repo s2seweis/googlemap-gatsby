@@ -268,7 +268,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 70px;
   display: flex;
   align-items: center;
   z-index: 200;
@@ -276,7 +276,7 @@ Navbar
 }
 
 .navbar--hidden {
-  top: -75px;
+  top: -175px;
 } 
 
 .nav-center {
@@ -369,7 +369,7 @@ Navbar
 @media screen and (min-width: 760px) {
   .navbar {
     /* background: transparent; */
-    height: 130px;
+    height: 100px;
   }
 }
 
@@ -382,7 +382,7 @@ Sidebar
 .sidebar {
   background: #fafafa;
   position: fixed;
-  top: 70px;
+  /* top: 70px; */
   left: 0;
   width: 60%;
   height: 100%;

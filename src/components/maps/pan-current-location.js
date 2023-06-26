@@ -128,7 +128,7 @@ function Map7 () {
       >
 
         <div id="capture" />
-        <locationButton />
+        {/* <locationButton /> */}
       </div>
 
     </div>

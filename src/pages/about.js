@@ -11,7 +11,7 @@ const contact = () => {
 
       <section className="contact-page">
 
-        <div style={{marginTop: '20px'}}>
+        <div style={{marginTop: '100px'}}>
           <a
             style={{
               fontSize: '1.3rem',

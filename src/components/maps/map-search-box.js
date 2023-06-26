@@ -165,7 +165,7 @@ function initAutocomplete () {
 
       <input
       id="pac-input"
-      class="controls"
+      className="controls"
       type="text"
       placeholder="Search Box"
     />

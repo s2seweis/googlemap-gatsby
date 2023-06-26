@@ -16,7 +16,9 @@ import Sidebar from './sidebar';
 import Sidebar5 from './sidebar5';
 // ###
 
+// ### - NavbarOnScroll
 import Navbar100 from './navbarOnScroll/navbar';
+// ### - NavbarOnScroll
 
 import Button from 'react-bootstrap/Button';
 import {FaAlignJustify} from 'react-icons/fa';
@@ -67,7 +69,7 @@ const Layout = ({children}) => {
 
   // ### - Sidebar: 6 - End
 
-  // ### - SidebarOnScroll:Test1
+  // ### - NavbarOnScroll:
 
   const [yOffset, setYOffset] = useState (window.pageYOffset);
   const [visible, setVisible] = useState (true);
@@ -85,7 +87,7 @@ const Layout = ({children}) => {
     setVisible (visible);
   }
 
-  // ### - SidebarOnScroll:Test1
+  // ### - SidebarOnScroll:
 
   return (
     <div className="flex min-h-screen flex-col justify-between bg-neutral-50 text-neutral-900">

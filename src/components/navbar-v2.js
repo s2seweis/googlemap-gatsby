@@ -26,8 +26,7 @@ import '../styles/burger.css';
 import classnames from "classnames";
 
 
-// ### - Test: Offcanvas
-// ###
+
 
 import {
   FaFacebookSquare,
@@ -44,17 +43,19 @@ import {SiGooglemaps} from 'react-icons/si';
 
 const Navbar1 = ({
   isOpen,
+  // ### - Sidebar
   toggleSidebar,
   toggleHideSidebar,
+  // ### - Sidebar:5
   handleShow,
-  // showSidebar,
   sidebar,
   setSidebar,
+  // ### NavbarOnScroll
   visible
 }) => {
   // console.log ('line:5', sidebar);
   // console.log ('line:6', setSidebar);
-  console.log("line:2", isOpen);
+  // console.log("line:2", isOpen);
 
   const [style1, setStyle] = useState ('overlay');
 
@@ -72,23 +73,12 @@ const Navbar1 = ({
   };
 
 
-  // ###
 
-
-
-
-
-
-
-
-
-  // ###
 
   return (
     <nav style={{ zIndex: '5'}} className={ classnames ("navbar", {"navbar--hidden":!visible}) }
     
     >
-    {/* <nav style={{position: 'sticky', zIndex: '5'}} className="navbar"> */}
 
       {/* ### */}
       <div className={style1} onClick={hideSidebar} />
@@ -123,14 +113,14 @@ const Navbar1 = ({
         <div style={{marginLeft:"10px"}} className="nav-title">
 
           {/* ### - Sidebar:5 */}
-          <Button
+          {/* <Button
             className="toggle-btn"
             variant="primary"
             onClick={handleShow}
             style={{fontSize: '1.5rem', background: 'yellow', marginRight:"5px"}}
           >
             <FaAlignJustify />
-          </Button>
+          </Button> */}
           {/* ### */}
 
           {/* ### - Sidebar:6 */}
@@ -152,7 +142,7 @@ const Navbar1 = ({
 
           {/* ### - Sidebar*/}
           <Button
-            style={{background: 'green', fontSize: '1.5rem', marginRight:"5px"}}
+            style={{background: 'lightblue', fontSize: '1.5rem', marginRight:"5px"}}
             variant="success"
             className="toggle-btn"
             onClick={isOpen ? toggleHideSidebar : toggleSidebar}
@@ -163,7 +153,7 @@ const Navbar1 = ({
 
 
           {/* <div  className='toggle-btn' > */}
-          <Sidebar6 />
+          {/* <Sidebar6 /> */}
           {/* </div> */}
 
           <h2

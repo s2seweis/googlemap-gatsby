@@ -11,7 +11,7 @@ const contact = () => {
 
       <section className="contact-page">
 
-        <div style={{marginTop: '20px'}}>
+        <div style={{marginTop: '100px'}}>
           <a
             style={{
               fontSize: '1.3rem',
@@ -37,10 +37,14 @@ const contact = () => {
             }}
           >
 
+            <p style={{fontWeight: '900'}} className="text-copyright-3">
+              ***(Just an example for a Copyright.)***
+            </p>
+
             <p style={{fontWeight: '700'}} className="text-copyright-3">
               Copyright (c) [2023] [SHW]. All rights reserved.
 
-              This copyright notice applies to the blog app [The Solace Life] software developed by [Sebastian Hans Weissenborn].
+              This copyright notice applies to software developed by [Sebastian Hans Weissenborn].
             </p>
 
             <p className="text-copyright-2">
@@ -70,12 +74,12 @@ const contact = () => {
           </div>
 
         </article>
-        <div
+
+        {/* <div
           className="ui breadcrumb"
           style={{
             display: 'flex',
             justifyContent: 'center',
-            // marginBottom: '50px',
             marginTop: '50px',
             paddingBottom: '50px',
           }}
@@ -87,8 +91,7 @@ const contact = () => {
 
           <div className="divider">/</div>
           <a aria-label="link" className="section " href="/index-all-recipes">Index</a>
-          {/* className="active section " */}
-        </div>
+        </div> */}
 
       </section>
     </Layout>

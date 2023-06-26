@@ -46,7 +46,7 @@ const Footer = () => {
           <a
             aria-label="link"
             // style={{color: 'black'}}
-            href="https://www.instagram.com/"
+            href="https://github.com/s2seweis"
             className="link-social-desktop"
           >
             <span><FaGithub /></span>

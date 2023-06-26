@@ -17,7 +17,7 @@ const contact = () => {
       <Seo seo={{metaTitle: 'Contact'}} />
 
 
-        <div style={{marginTop: '20px'}}>
+        <div style={{marginTop: '100px'}}>
           <a
             style={{
               fontSize: '1.3rem',

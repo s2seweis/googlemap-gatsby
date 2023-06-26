@@ -15,7 +15,7 @@ const Sidebar = ({isOpen, toggleSidebar, toggleHideSidebar}) => {
   // const toggleSidebar = () => {
   //   setIsOpen (!isOpen);
   // };
-  console.log("line:1", isOpen);
+  // console.log("line:1", isOpen);
 
   return (
     <aside className={isOpen ? 'sidebar show-sidebar' : 'sidebar'}>

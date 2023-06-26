@@ -46,7 +46,8 @@ function Intro () {
         // width: '400px', 
         margin: 'auto', 
         display:"grid", 
-        textAlign:"center"
+        textAlign:"center",
+        width:"fit-content"
         }}>
 
         <a
