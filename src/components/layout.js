@@ -72,24 +72,20 @@ const Layout = ({children}) => {
   // ### - NavbarOnScroll:
 
   const [yOffset, setYOffset] = useState ();
-  // const [yOffset, setYOffset] = useState (window.pageYOffset);
   const [visible, setVisible] = useState (true);
 
   useEffect (() => {
     window.addEventListener ('scroll', handleScroll);
     return () => window.removeEventListener ('scroll', handleScroll);
-
-    function handleScroll () {
-      const currentYOffset = window.pageYOffset;
-      const visible = yOffset > currentYOffset;
-  
-      setYOffset (currentYOffset);
-      setVisible (visible);
-    }
-
   });
 
- 
+  function handleScroll () {
+    const currentYOffset = window.pageYOffset;
+    const visible = yOffset > currentYOffset;
+
+    setYOffset (currentYOffset);
+    setVisible (visible);
+  }
 
   // ### - SidebarOnScroll:
 
