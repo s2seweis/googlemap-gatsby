@@ -73,7 +73,8 @@ const Layout = ({children}) => {
 
 
 
-  const isBrowser = typeof window !== "undefined"
+  // const isBrowser = typeof window !== "undefined"
+  // console.log( "line:1001", isBrowser);
 
   const [yOffset, setYOffset] = useState ();
   const [visible, setVisible] = useState (true);
@@ -81,14 +82,14 @@ const Layout = ({children}) => {
   useEffect (() => {
 
     function handleScroll () {
-      if (isBrowser) {
+      // if (isBrowser) {
 
-        const currentYOffset = window.pageYOffset;
+        const currentYOffset = pageYOffset;
         const visible = yOffset > currentYOffset;
         
         setYOffset (currentYOffset);
         setVisible (visible);
-      }
+      // }
     }
 
 
