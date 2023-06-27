@@ -170,7 +170,7 @@ const Layout = ({children}) => {
 
         {/* <Navbar100 visible={visible} /> */}
         {/* ### */}
-        {/* <Navbar1
+        <Navbar1
           isOpen={isOpen}
           toggleSidebar={toggleSidebar}
           handleShow={handleShow}
@@ -178,7 +178,7 @@ const Layout = ({children}) => {
           setSidebar={setSidebar}
           toggleHideSidebar={toggleHideSidebar}
           visible={visible}
-        /> */}
+        />
         {/* ### */}
 
         {/* <Sidebar6
