@@ -76,26 +76,26 @@ const Layout = ({children}) => {
   // const isBrowser = typeof window !== "undefined"
   // console.log( "line:1001", isBrowser);
 
-  const [yOffset, setYOffset] = useState ();
+  // const [yOffset, setYOffset] = useState ();
   const [visible, setVisible] = useState (true);
 
-  useEffect (() => {
+  // useEffect (() => {
 
-    function handleScroll () {
-      // if (isBrowser) {
+  //   function handleScroll () {
+  //     // if (isBrowser) {
 
-        const currentYOffset = scrollY;
-        const visible = yOffset > currentYOffset;
+  //       const currentYOffset = scrollY;
+  //       const visible = yOffset > currentYOffset;
         
-        setYOffset (currentYOffset);
-        setVisible (visible);
-      // }
-    }
+  //       setYOffset (currentYOffset);
+  //       setVisible (visible);
+  //     // }
+  //   }
 
 
-    addEventListener ('scroll', handleScroll);
-    return () => removeEventListener ('scroll', handleScroll);
-  });
+  //   addEventListener ('scroll', handleScroll);
+  //   return () => removeEventListener ('scroll', handleScroll);
+  // });
 
  
 
