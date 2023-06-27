@@ -71,7 +71,8 @@ const Layout = ({children}) => {
 
   // ### - NavbarOnScroll:
 
-  const [yOffset, setYOffset] = useState (window.pageYOffset);
+  const [yOffset, setYOffset] = useState ();
+  // const [yOffset, setYOffset] = useState (window.pageYOffset);
   const [visible, setVisible] = useState (true);
 
   useEffect (() => {
