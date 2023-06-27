@@ -3,13 +3,13 @@ import Seo from '../components/seo';
 
 import Layout from '../components/layout';
 
-const contact = () => {
+const about = () => {
   return (
     <Layout>
 
       <Seo seo={{metaTitle: 'Copyright'}} />
 
-      <section className="contact-page">
+      <section className="about-page">
 
         <div style={{marginTop: '100px'}}>
           <a
@@ -156,4 +156,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default about;
