@@ -71,21 +71,32 @@ const Layout = ({children}) => {
 
   // ### - NavbarOnScroll:
 
+
+
+  const isBrowser = typeof window !== "undefined"
+
   const [yOffset, setYOffset] = useState ();
   const [visible, setVisible] = useState (true);
 
   useEffect (() => {
+
+    function handleScroll () {
+      if (isBrowser) {
+
+        const currentYOffset = window.pageYOffset;
+        const visible = yOffset > currentYOffset;
+        
+        setYOffset (currentYOffset);
+        setVisible (visible);
+      }
+    }
+
+
     window.addEventListener ('scroll', handleScroll);
     return () => window.removeEventListener ('scroll', handleScroll);
   });
 
-  function handleScroll () {
-    const currentYOffset = window.pageYOffset;
-    const visible = yOffset > currentYOffset;
-
-    setYOffset (currentYOffset);
-    setVisible (visible);
-  }
+ 
 
   // ### - SidebarOnScroll:
 
