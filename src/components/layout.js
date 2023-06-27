@@ -71,8 +71,6 @@ const Layout = ({children}) => {
 
   // ### - NavbarOnScroll:
 
-
-
   // const isBrowser = typeof window !== "undefined"
   // console.log( "line:1001", isBrowser);
 
@@ -86,18 +84,15 @@ const Layout = ({children}) => {
 
   //       const currentYOffset = scrollY;
   //       const visible = yOffset > currentYOffset;
-        
+
   //       setYOffset (currentYOffset);
   //       setVisible (visible);
   //     // }
   //   }
 
-
   //   addEventListener ('scroll', handleScroll);
   //   return () => removeEventListener ('scroll', handleScroll);
   // });
-
- 
 
   // ### - SidebarOnScroll:
 
@@ -174,8 +169,8 @@ const Layout = ({children}) => {
         />
 
         {/* <Navbar100 visible={visible} /> */}
-
-        <Navbar1
+        {/* ### */}
+        {/* <Navbar1
           isOpen={isOpen}
           toggleSidebar={toggleSidebar}
           handleShow={handleShow}
@@ -183,7 +178,8 @@ const Layout = ({children}) => {
           setSidebar={setSidebar}
           toggleHideSidebar={toggleHideSidebar}
           visible={visible}
-        />
+        /> */}
+        {/* ### */}
 
         {/* <Sidebar6
           sidebar={sidebar}
