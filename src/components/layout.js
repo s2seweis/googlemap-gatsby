@@ -84,7 +84,7 @@ const Layout = ({children}) => {
     function handleScroll () {
       // if (isBrowser) {
 
-        const currentYOffset = pageYOffset;
+        const currentYOffset = scrollY;
         const visible = yOffset > currentYOffset;
         
         setYOffset (currentYOffset);
