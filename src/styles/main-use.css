@@ -320,6 +320,7 @@ Navbar
   color: black;
   cursor: pointer;
   transition: var(--transition);
+  /* display: none; */
 }
 .toggle-btn:hover {
   color: white;
@@ -332,9 +333,12 @@ Navbar
 
 
 @media screen and (min-width: 772px) {
+
   .toggle-btn {
     display: none;
   }
+
+
   .nav-links {
     display: flex;
     justify-content: flex-end;
