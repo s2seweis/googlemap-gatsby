@@ -93,8 +93,8 @@ const Layout = ({children}) => {
     }
 
 
-    window.addEventListener ('scroll', handleScroll);
-    return () => window.removeEventListener ('scroll', handleScroll);
+    addEventListener ('scroll', handleScroll);
+    return () => removeEventListener ('scroll', handleScroll);
   });
 
  
