@@ -143,7 +143,6 @@ const Navbar1 = ({
           {/* ### - Sidebar*/}
           <Button
             // style={{background: 'lightblue', fontSize: '1.5rem', marginRight:"5px"}}
-            variant="success"
             className="toggle-btn"
             onClick={isOpen ? toggleHideSidebar : toggleSidebar}
           >

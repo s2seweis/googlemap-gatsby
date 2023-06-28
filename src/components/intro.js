@@ -4,7 +4,8 @@ import React from 'react';
 
 import Button from 'react-bootstrap/Button';
 
-function Intro () {
+const Intro = () => {
+
   return (
     <div className="intro">
 
