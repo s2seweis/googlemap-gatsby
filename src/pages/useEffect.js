@@ -37,15 +37,15 @@ const useEffectPage = () => {
 
           {/* ### */}
 
+
+          <iframe src="https://codesandbox.io/embed/sw-useeffect--789z9z?fontsize=14&hidenavigation=1&theme=dark"
+          style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+          ></iframe>
          
 
-          <iframe src="https://codesandbox.io/embed/react-hooks-useeffect-0twv9?fontsize=14&hidenavigation=1&theme=dark"
+          {/* <iframe src="https://codesandbox.io/embed/react-hooks-useeffect-0twv9?fontsize=14&hidenavigation=1&theme=dark"
           style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-
-
-        //   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-
-   ></iframe>
+          ></iframe> */}
 
 
 

@@ -274,10 +274,12 @@ Navbar
   align-items: center;
   z-index: 200;
   background: #0d6efd;
+  transition: top 0.8s
 }
 
 .navbar--hidden {
   top: -175px;
+  transition: top 0.8s
 } 
 
 .nav-center {
