@@ -32,7 +32,7 @@ export const SidebarData = [
     // ]
   },
   {
-    title: 'Content',
+    title: 'Hooks',
     // path: '/',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,

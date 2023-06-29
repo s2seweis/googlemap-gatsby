@@ -17,16 +17,13 @@ import Sidebar from '../components/sidebar';
 
 import Button from 'react-bootstrap/Button';
 
-
-
 import Sidebar6 from '../components/sidebar6/Sidebar6';
 
 import '../styles/burger.css';
 
-import classnames from "classnames";
+import classnames from 'classnames';
 
-
-
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import {
   FaFacebookSquare,
@@ -51,7 +48,7 @@ const Navbar1 = ({
   sidebar,
   setSidebar,
   // ### NavbarOnScroll
-  visible
+  visible,
 }) => {
   // console.log ('line:5', sidebar);
   // console.log ('line:6', setSidebar);
@@ -72,12 +69,10 @@ const Navbar1 = ({
     setStyle ('overlay');
   };
 
-
-
-
   return (
-    <nav style={{ zIndex: '5'}} className={ classnames ("navbar", {"navbar--hidden":!visible}) }
-    
+    <nav
+      style={{zIndex: '5'}}
+      className={classnames ('navbar', {'navbar--hidden': !visible})}
     >
 
       {/* ### */}
@@ -110,7 +105,7 @@ const Navbar1 = ({
           <FaAlignJustify />
         </Button> */}
 
-        <div style={{marginLeft:"10px"}} className="nav-title">
+        <div style={{marginLeft: '10px'}} className="nav-title">
 
           {/* ### - Sidebar:5 */}
           {/* <Button
@@ -150,7 +145,6 @@ const Navbar1 = ({
           </Button>
           {/* ### - Sidebar */}
 
-
           {/* <div  className='toggle-btn' > */}
           {/* <Sidebar6 /> */}
           {/* </div> */}
@@ -163,7 +157,7 @@ const Navbar1 = ({
               // fontFamily: 'Lobster Two',
               width: '100%',
               margin: 'auto',
-              fontSize:"revert"
+              fontSize: 'revert',
             }}
           >
             {/* The Solace Life */}
@@ -171,7 +165,7 @@ const Navbar1 = ({
           </h2>
         </div>
 
-        <div className="nav-links">
+        <div className="nav-links" style={{alignItems:"center"}}>
           {pageLinks.map (link => {
             return (
               <Link key={link.id} to={link.url}>
@@ -179,7 +173,24 @@ const Navbar1 = ({
               </Link>
             );
           })}
+
+          <Dropdown>
+            <Dropdown.Toggle style={{fontSize:"x-large"}} // variant="success"
+            id="dropdown-basic">
+              Dropdown Button
+            </Dropdown.Toggle >
+
+            <Dropdown.Menu style={{width:"-webkit-fill-available"}}>
+              <Dropdown.Item style={{marginLeft:"20px"}} href="/hooks">Hooks</Dropdown.Item>
+              <Dropdown.Item style={{marginLeft:"20px"}} href="/about">About</Dropdown.Item>
+              <Dropdown.Item style={{marginLeft:"20px"}} href="#/action-3">Contact</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
         </div>
+        {/* ### */}
+
+        {/* ### */}
 
         <Sidebar />
 
