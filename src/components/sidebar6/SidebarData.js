@@ -52,13 +52,13 @@ export const SidebarData = [
       },
       {
         title: 'useMemo',
-        path: '/hooks',
+        path: '/hooks/#section3',
         icon: <GiIcons.GiPirateHook />,
         cName: 'sub-nav'
       },
       {
         title: 'useCallback',
-        path: '/hooks',
+        path: '/hooks/#section4',
         icon: <GiIcons.GiPirateHook />
       },
       {
