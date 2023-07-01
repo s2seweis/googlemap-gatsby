@@ -41,24 +41,29 @@ export const SidebarData = [
     subNav: [
       {
         title: 'useEffect',
-        path: '/useEffect',
+        path: '/hooks/#section1',
         icon: <GiIcons.GiPirateHook />,
         cName: 'sub-nav'
       },
       {
-        title: 'useMemo',
-        path: '/contact',
-        icon: <GiIcons.GiPirateHook />,
-        cName: 'sub-nav'
-      },
-      {
-        title: 'useReft',
-        path: '/copyright',
+        title: 'useRef',
+        path: '/hooks/#section2',
         icon: <GiIcons.GiPirateHook />
       },
       {
+        title: 'useMemo',
+        path: '/hooks',
+        icon: <GiIcons.GiPirateHook />,
+        cName: 'sub-nav'
+      },
+      {
         title: 'useCallback',
-        path: '/copyright',
+        path: '/hooks',
+        icon: <GiIcons.GiPirateHook />
+      },
+      {
+        title: 'Custom Hooks',
+        path: '/hooks',
         icon: <GiIcons.GiPirateHook />
       }
     ]
