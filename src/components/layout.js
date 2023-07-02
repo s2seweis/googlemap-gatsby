@@ -12,8 +12,8 @@ import {FaYoutube} from 'react-icons/fa';
 // ###
 
 // ### - Sidebars
-import Sidebar from './sidebar';
-import Sidebar5 from './sidebar5';
+import Sidebar from './sidebar/sidebar';
+import Sidebar5 from './sidebar/sidebar5';
 // ###
 
 // ### - NavbarOnScroll

@@ -13,7 +13,7 @@ import {Link} from 'gatsby';
 // ###
 // import MenuBurger from './burger-menu';
 
-import Sidebar from '../components/sidebar';
+import Sidebar from './sidebar/sidebar';
 
 import Button from 'react-bootstrap/Button';
 

@@ -63,7 +63,12 @@ export const SidebarData = [
       },
       {
         title: 'Custom Hooks',
-        path: '/hooks',
+        path: '/hooks/#section5',
+        icon: <GiIcons.GiPirateHook />
+      },
+      {
+        title: 'useContext',
+        path: '/hooks/#section6',
         icon: <GiIcons.GiPirateHook />
       }
     ]

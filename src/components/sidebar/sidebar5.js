@@ -4,7 +4,7 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import {use} from '../styles/bootstrap.css';
+import {use} from '../../styles/bootstrap.css';
 
 
 import Dropdown from 'react-bootstrap/Dropdown';

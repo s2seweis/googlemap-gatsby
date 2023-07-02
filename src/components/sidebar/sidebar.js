@@ -1,13 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react';
-import links from '../constans/links-sidemenu';
-import socialLinks from '../constans/social_links';
+import links from '../../constans/links-sidemenu';
+import socialLinks from '../../constans/social_links';
 import {Link} from 'gatsby';
 
 // ###close
 import {FaTimes} from 'react-icons/fa';
 
-import {SidebarData} from './sidebar6/SidebarData';
-import SubMenu from './sidebar6/SubMenu';
+import {SidebarData} from '../sidebar6/SidebarData';
+import SubMenu from '../sidebar6/SubMenu';
 
 const Sidebar = ({isOpen, toggleSidebar, toggleHideSidebar}) => {
   // const [isOpen, setIsOpen] = useState (false);
