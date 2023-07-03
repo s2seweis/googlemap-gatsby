@@ -27,3 +27,5 @@ Following maps are used:
 - Add Sandbox or other Editor 
 
 <!-- Test### -->
+
+## For Netlify there are deprecated packages, Use in Environtment Variables: CI = true, NPM_FLAGS = --legacy-peer-peps for ignoring them
