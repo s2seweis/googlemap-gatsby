@@ -7,11 +7,21 @@ import ClusteringComponentV3 from '../components/Maps/Clustering/ClusteringCompo
 export default function Clustering() {
     return (
         <Layout>
-        <div>
-            <ClusteringComponentV1 />
-            <ClusteringComponentV2 />
-            <ClusteringComponentV3 />
-        </div>
+            <a
+                style={{
+                    fontSize: '1.3rem',
+                    padding: '5px',
+                    marginLeft: '20px',
+                }}
+                href="javascript:history.back()"
+            >
+                <button type="button" className="btn btn-link">Go Back</button>
+            </a>
+            <div>
+                <ClusteringComponentV1 />
+                <ClusteringComponentV2 />
+                <ClusteringComponentV3 />
+            </div>
         </Layout>
     )
 }

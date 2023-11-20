@@ -5,9 +5,19 @@ import AutoCompleteComponent from '../components/Maps/AutoCompleteComponent';
 export default function AutoComplete() {
     return (
         <Layout>
-        <div>
-        <AutoCompleteComponent/>
-        </div>
+            <a
+                style={{
+                    fontSize: '1.3rem',
+                    padding: '5px',
+                    marginLeft: '20px',
+                }}
+                href="javascript:history.back()"
+            >
+                <button type="button" className="btn btn-link">Go Back</button>
+            </a>
+            <div>
+                <AutoCompleteComponent />
+            </div>
         </Layout>
     )
 }

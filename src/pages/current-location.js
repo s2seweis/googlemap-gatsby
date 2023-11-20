@@ -6,10 +6,20 @@ import CurrentLocationComponentV2 from '../components/Maps/CurrentLocation/Curre
 export default function CurrentLocation() {
     return (
         <Layout>
-        <div>
-         <CurrentLocationComponentV1/>
-         <CurrentLocationComponentV2/>
-        </div>
+            <a
+                style={{
+                    fontSize: '1.3rem',
+                    padding: '5px',
+                    marginLeft: '20px',
+                }}
+                href="javascript:history.back()"
+            >
+                <button type="button" className="btn btn-link">Go Back</button>
+            </a>
+            <div>
+                <CurrentLocationComponentV1 />
+                <CurrentLocationComponentV2 />
+            </div>
         </Layout>
     )
 }

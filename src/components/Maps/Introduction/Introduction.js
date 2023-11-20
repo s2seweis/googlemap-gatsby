@@ -10,7 +10,7 @@ const Introduction = () => {
         <div className="intro-content">
           <p>Following sources were used for building this website:</p>
         </div>
-        <div className="intro-buttons">
+        <div style={{textAlign:"center"}} className="intro-buttons">
           <a href="https://www.npmjs.com/package/@react-google-maps/api">
             <button type="button" className="btn btn-link">
               react-google-maps/api

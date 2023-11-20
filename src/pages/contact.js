@@ -7,8 +7,8 @@ const contact = () => {
   return (
     <Layout>
       <section className="contact-page">
-      <Seo seo={{metaTitle: 'Contact'}} />
-        <div 
+        <Seo seo={{ metaTitle: 'Contact' }} />
+        <div
         // style={{marginTop: '100px'}}
         >
           <a
@@ -24,9 +24,9 @@ const contact = () => {
         </div>
         <article
           className="contact-form"
-          style={{margin: 'auto', marginTop: '100px'}}
+          style={{ margin: 'auto', marginTop: '100px' }}
         >
-          <h3 style={{textAlign: 'center'}}>get in touch</h3>
+          <h3 style={{ textAlign: 'center' }}>get in touch</h3>
           <form
             action="https://formsubmit.co/weissenborn.sebastian@gmail.com"
             method="POST"
@@ -64,7 +64,7 @@ const contact = () => {
               />
             </div>
             <button
-              style={{backgroundColor: 'lightblue'}}
+              style={{ backgroundColor: 'lightblue' }}
               type="submit"
               className="submit-btn btn"
             >
