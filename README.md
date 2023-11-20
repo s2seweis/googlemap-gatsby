@@ -3,8 +3,8 @@
 This is a React Gatsby app that integrates the Google Maps API and uses Strapi as a CMS (Content Management System). The application utilizes various features, including displaying markers as Boxes and Buttons on the map, implementing clustering for a better visual representation of markers, allowing users to pan to their current location, incorporating auto-complete functionality using Google Maps, and supporting KML data through Strapi.
 
 <div align="center">
-<img src="assets/gmap-3.png" alt="Example Image">
-<img src="assets/gmap-4.png" alt="Example Image">
+<img src="assets/gmap-5.png" alt="Example Image">
+<img src="assets/gmap-6.png" alt="Example Image">
 </div>
 
 ## Getting Started
