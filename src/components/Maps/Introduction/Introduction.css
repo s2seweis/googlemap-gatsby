@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    height: 100vh;
     margin: 20px;
+    min-height: 100vh;
   }
   
   .intro-card {

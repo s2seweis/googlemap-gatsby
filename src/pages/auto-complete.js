@@ -15,8 +15,10 @@ export default function AutoComplete() {
             >
                 <button type="button" className="btn btn-link">Go Back</button>
             </a>
-            <div>
-                <AutoCompleteComponent />
+            <div className='intro-container'>
+                <div className='intro-card'>
+                    <AutoCompleteComponent />
+                </div>
             </div>
         </Layout>
     )

@@ -15,8 +15,10 @@ export default function Kml() {
             >
                 <button type="button" className="btn btn-link">Go Back</button>
             </a>
-            <div>
-                <KmlComponent />
+            <div className='intro-container'>
+                <div className='intro-card'>
+                    <KmlComponent />
+                </div>
             </div>
         </Layout>
     )

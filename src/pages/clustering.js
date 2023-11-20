@@ -17,10 +17,12 @@ export default function Clustering() {
             >
                 <button type="button" className="btn btn-link">Go Back</button>
             </a>
-            <div>
+            <div className='intro-container'>
+                <div className='intro-card'>
                 <ClusteringComponentV1 />
                 <ClusteringComponentV2 />
                 <ClusteringComponentV3 />
+                </div>
             </div>
         </Layout>
     )

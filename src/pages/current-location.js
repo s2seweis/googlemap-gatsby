@@ -16,9 +16,11 @@ export default function CurrentLocation() {
             >
                 <button type="button" className="btn btn-link">Go Back</button>
             </a>
-            <div>
+            <div className='intro-container'>
+            <div className='intro-card'>
                 <CurrentLocationComponentV1 />
                 <CurrentLocationComponentV2 />
+            </div>
             </div>
         </Layout>
     )

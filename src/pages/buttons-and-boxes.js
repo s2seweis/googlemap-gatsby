@@ -16,9 +16,11 @@ export default function ButtonsAndBox() {
             >
                 <button type="button" className="btn btn-link">Go Back</button>
             </a>
-            <div>
-                <MarkersButtonsComponent />
-                <InfoboxComponent />
+            <div className='intro-container'>
+                <div className='intro-card'>
+                    <MarkersButtonsComponent />
+                    <InfoboxComponent />
+                </div>
             </div>
         </Layout>
     )
