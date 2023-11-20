@@ -1,23 +1,16 @@
 import React from 'react';
-import Seo from "../components/seo"
-
-import Layout from '../components/layout';
+import Seo from "../components/Seo/Seo"
+import Layout from '../components/Layout/layout';
 
 const contact = () => {
-  // const seo = {
-  //     metaTitle: title,
-  //     metaDescription: title,
-  //   }
 
   return (
     <Layout>
-
       <section className="contact-page">
-
       <Seo seo={{metaTitle: 'Contact'}} />
-
-
-        <div style={{marginTop: '100px'}}>
+        <div 
+        // style={{marginTop: '100px'}}
+        >
           <a
             style={{
               fontSize: '1.3rem',
@@ -29,7 +22,6 @@ const contact = () => {
             <button type="button" className="btn btn-link">Go Back</button>
           </a>
         </div>
-
         <article
           className="contact-form"
           style={{margin: 'auto', marginTop: '100px'}}
@@ -52,13 +44,11 @@ const contact = () => {
                 name="_next"
                 value="https://precious-conkies-b8586b.netlify.app/thankyou"
               />
-
               <input
                 type="hidden"
                 name="_subject"
                 value="Message From My Portfolio!!!"
               />
-
               <input
                 type="email"
                 name="email"
@@ -83,25 +73,6 @@ const contact = () => {
           </form>
         </article>
       </section>
-
-      {/* <div
-          className="ui breadcrumb"
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '50px',
-            paddingBottom:"50px"
-          }}
-        >
-          <a aria-label="link" className="section" href="/news">News</a>
-
-          <div className="divider">/</div>
-          <a aria-label="link" className="section" href="/about">About</a>
-
-          <div className="divider">/</div>
-          <a aria-label="link" className="section " href="/index-all-recipes">Index</a>
-        </div> */}
-
     </Layout>
   );
 };

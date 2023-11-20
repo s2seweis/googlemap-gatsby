@@ -7,44 +7,21 @@ export default function HTML (props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
-
-        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&libraries=places" /> */}
-
-      
-
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
-        {/* <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&callback=initMap" /> */}
-
-        {/* <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5912939817167412"
-          crossOrigin='anonymous'
-        /> */}
-
         <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js" />
-
         {props.headComponents}
-
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-
-        {/* <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&callback=initMap" /> */}
-
-        {/* normally its working - just for checking - commented it out */}
-        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA" /> */}
-
         <script
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor2w9g3kMJrIJn3Ydbk4EtcfMNK6xNBA&libraries=places&v=weekly"
           defer
         />
-
         <div
           key={`loader`}
           id="___loader"
@@ -63,7 +40,6 @@ export default function HTML (props) {
         >
           <img src={LoaderSVG} alt="Loading spinner" width="50" height="50" />
         </div>
-
         <div
           key={`body`}
           id="___gatsby"

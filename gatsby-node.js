@@ -8,9 +8,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // ###
   // const breakfastPost = path.resolve("./src/templates/breakfast-post.js")
 
-
-
-
   const result = await graphql(
     `
       {
@@ -46,48 +43,4 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
-
-  // ### - Breakfast
-
-  // const result1 = await graphql(
-  //   `
-  //     {
-  //       allStrapiBreakfast {
-  //         nodes {
-  //           title
-  //           slug
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-
-  // if (result1.errors) {
-  //   reporter.panicOnBuild(
-  //     `There was an error loading your Strapi breakfasts`,
-  //     result1.errors
-  //   )
-
-  //   return
-  // }
-
-  // const breakfast = result1.data.allStrapiBreakfast.nodes
-
-  // if (breakfast.length > 0) {
-  //   breakfast.forEach((breakfast) => {
-  //     createPage({
-  //       path: `/breakfast/${breakfast.slug}`,
-  //       component: breakfastPost,
-  //       context: {
-  //         slug: breakfast.slug,
-  //       },
-  //     })
-  //   })
-  // }
-
-
-
-
-
-  
 }
