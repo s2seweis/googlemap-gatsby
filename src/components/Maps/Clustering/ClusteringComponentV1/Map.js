@@ -38,8 +38,8 @@ export default function clearMap(props) {
       <GoogleMap
         id="circle-example"
         mapContainerStyle={{
-          height: "400px",
-          width: "400px",
+          height: "350px",
+          width: "350px",
           margin:"auto",
         }}
         // zoom={7}

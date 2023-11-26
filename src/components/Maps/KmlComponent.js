@@ -4,8 +4,8 @@ import {GoogleMap} from '@react-google-maps/api';
 import Button from 'react-bootstrap/Button';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px',
+  width: '350px',
+  height: '350px',
 };
 
 const mapOptions = {
@@ -45,29 +45,15 @@ function KmlComponent () {
 
   return (
     <div className="kml-level1">  
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '} Display KML {' '}
-      </h1>
-
       <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div style={{width: '400px', textAlign:"justify"}}>
+        <div style={{width: '350px', textAlign:"justify"}}>
           KML, which stands for Keyhole Markup Language, is a file format used for displaying geographic data in mapping applications, with Google Maps being one of the popular platforms that supports it.
           KML files contain a combination of structured data and markup tags that define various geographical features such as points, lines, polygons, and overlays. 
           {' '}
-        </div>
-      </div>
-      <div className='origin-button' style={{margin:"auto", display:"flex", justifyContent:"center", marginBottom:"15px"}}>
+      <div className='origin-button' >
       <Button href="https://developers.google.com/maps/documentation/javascript/kml" variant="primary">Read More</Button>
+      </div>
+        </div>
       </div>
       <div
         className="kml"

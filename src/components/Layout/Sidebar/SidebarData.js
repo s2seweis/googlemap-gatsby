@@ -14,43 +14,6 @@ export const SidebarData = [
     icon: <AiIcons.AiFillHome />,
   },
   {
-    title: 'Maps',
-    // path: '/',
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: 'KML',
-        path: '/kml',
-        icon: <GiIcons.GiPirateHook />,
-        cName: 'sub-nav'
-      },
-      {
-        title: 'Buttons & Boxes',
-        path: '/buttons-and-boxes',
-        icon: <GiIcons.GiPirateHook />
-      },
-      {
-        title: 'Clustering',
-        path: '/clustering',
-        icon: <GiIcons.GiPirateHook />,
-        cName: 'sub-nav'
-      },
-      {
-        title: 'Current Location',
-        path: '/current-locaion',
-        icon: <GiIcons.GiPirateHook />
-      },
-      {
-        title: 'Auto Complete',
-        path: '/auto-complete',
-        icon: <GiIcons.GiPirateHook />
-      }
-    ]
-  },
-  {
     title: 'About',
     // path: '/messages',
     icon: <CiIcons.CiCircleMore />,

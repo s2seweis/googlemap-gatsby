@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './Introduction.css';
+import CardSelector from '../../CardSelector/CardSelector';
 
 const Introduction = () => {
   return (
@@ -27,13 +28,7 @@ const Introduction = () => {
             </button>
           </a>
         </div>
-        <div className="intro-links">
-          <Link to="/kml">KML</Link>
-          <Link to="/buttons-and-boxes">Buttons & Infobox</Link>
-          <Link to="/clustering">Clustering</Link>
-          <Link to="/current-location">Current Location</Link>
-          <Link to="/auto-complete">Auto Complete</Link>
-        </div>
+        <CardSelector/>
       </div>
     </div>
   );

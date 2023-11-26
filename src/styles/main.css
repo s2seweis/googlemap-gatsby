@@ -689,3 +689,25 @@ button.custom-map1-control-button {
   z-index: 1;
   display: block;
 }
+
+.kml-level1{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .kml-level1 {
+    display: contents;
+    margin: auto;
+    gap: 0px;
+  }
+}
+
+.origin-button{
+  margin: 20px 15px;
+  display: flex;
+  justify-content: center;
+}

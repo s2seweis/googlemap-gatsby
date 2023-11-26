@@ -4,8 +4,8 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'gatsby';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '350px',
+  height: '350px'
 };
 
 const center = {
@@ -37,27 +37,14 @@ function MarkersButtonsComponent() {
   };
 
   return (
-    <div>
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '} Markers and Buttons {' '}
-      </h1>
+    <div className='kml-level1'>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '5px' }}>
-        <div style={{ width: "400px", textAlign: "justify" }}>
+        <div style={{ width: "350px", textAlign: "justify" }}>
           Buttons and Google Maps are two distinct elements, but they can be interconnected to enhance user interactions and provide convenient functionality within the Google Maps environment.
-        </div>
-      </div>
       <div className='origin-button' style={{ margin: "auto", display: "flex", justifyContent: "center", marginBottom: "15px" }}>
         <Button href="https://developers.google.com/maps/documentation/javascript/markers" variant="primary">Read More</Button>
+      </div>
+        </div>
       </div>
       <div className='map' style={{ display: "flex", justifyContent: "center", margin: "5px" }} >
         <GoogleMap

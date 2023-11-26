@@ -11,8 +11,8 @@ import {Button} from 'react-bootstrap';
 import {Link} from 'gatsby';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px',
+  width: '350px',
+  height: '350px',
 };
 
 const center = {
@@ -27,30 +27,15 @@ const onLoad = infoBox => {
 
 function InfoboxComponent () {
   return (
-    <div>
-      <h1
-        style={{
-          textAlign: 'center',
-          marginTop: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          // fontFamily: 'Lobster Two',
-          fontSize: '2rem',
-          background: 'lightskyblue',
-        }}
-      >
-        {' '} Infobox {' '}
-      </h1>
-
+    <div className='kml-level1' >
       <div style={{display: 'flex', justifyContent: 'center', margin: '5px'}}>
-        <div style={{width:"400px", textAlign:"justify"}}>
+        <div style={{width:"350px", textAlign:"justify"}}>
         Infoboxes are information windows or pop-up boxes that appear when interacting with markers or other map features in the Google Maps environment. They provide a way to display additional information and details related to a specific location or point of interest on the map. 
-        </div>
-      </div>
       <div className='origin-button' style={{margin:"auto", display:"flex", justifyContent:"center", marginBottom:"15px"}}>
         {/* ### - Test: Bootstrap Button */}
       <Button href="https://developers.google.com/maps/documentation/javascript/infowindows" variant="primary">Read More</Button>
+      </div>
+        </div>
       </div>
       <div
         className="map"

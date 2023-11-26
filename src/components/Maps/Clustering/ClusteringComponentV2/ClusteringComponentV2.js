@@ -41,7 +41,7 @@ export default function ClusteringComponentV2 () {
       <div className='marker-clustering-v2' style={{display:"flex", justifyContent:"center", margin: '5px'}} >
         <div
           ref={node => setMapContainer (node)}
-          style={{height: '400px', width: '400px' }}
+          style={{height: '350px', width: '350px' }}
         />
       </div>
     </GoogleMapProvider>
