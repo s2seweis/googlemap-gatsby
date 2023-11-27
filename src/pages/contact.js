@@ -1,6 +1,6 @@
 import React from 'react';
 import Seo from "../components/Seo/Seo"
-import Layout from '../components/Layout/layout';
+import Layout from '../components/Layout/Layout';
 
 const contact = () => {
 

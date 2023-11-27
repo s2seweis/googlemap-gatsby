@@ -1,6 +1,6 @@
 /*global google*/
 import React from 'react';
-import Layout from '../components/Layout/layout';
+import Layout from '../components/Layout/Layout';
 import Seo from '../components/Seo/Seo';
 import ScrollToTop from 'react-scroll-to-top';
 import Introduction from '../components/Maps/Introduction/Introduction';
