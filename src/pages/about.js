@@ -1,11 +1,11 @@
 import React from 'react';
-import Seo from '../components/Seo/Seo';
+// import Seo from '../components/Seo/Seo';
 import Layout from '../components/Layout/Layout';
 
 const about = () => {
   return (
     <Layout>
-      <Seo seo={{ metaTitle: 'Copyright' }} />
+      {/* <Seo seo={{ metaTitle: 'Copyright' }} /> */}
       <div className='intro-container'>
         <div className='intro-card'>
           <section className="about-page">

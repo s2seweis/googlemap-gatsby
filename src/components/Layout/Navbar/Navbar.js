@@ -77,7 +77,7 @@ const Navbar = ({
             <Dropdown.Menu style={{width:"-webkit-fill-available"}}>
               {/* <Dropdown.Item style={{marginLeft:"20px"}} href="/hooks">Hooks</Dropdown.Item> */}
               <Dropdown.Item style={{marginLeft:"20px"}} href="/about">About</Dropdown.Item>
-              <Dropdown.Item style={{marginLeft:"20px"}} href="#/action-3">Contact</Dropdown.Item>
+              <Dropdown.Item style={{marginLeft:"20px"}} href="/contact">Contact</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>

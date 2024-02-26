@@ -1,5 +1,5 @@
 import React from 'react';
-import Seo from "../components/Seo/Seo"
+// import Seo from "../components/Seo/Seo"
 import Layout from '../components/Layout/Layout';
 
 const contact = () => {
@@ -9,7 +9,7 @@ const contact = () => {
       <div className='intro-container'>
         <div className='intro-card'>
           <section className="contact-page">
-            <Seo seo={{ metaTitle: 'Contact' }} />
+            {/* <Seo seo={{ metaTitle: 'Contact' }} /> */}
             <div
             // style={{marginTop: '100px'}}
             >

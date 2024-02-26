@@ -1,7 +1,7 @@
 /*global google*/
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import Seo from '../components/Seo/Seo';
+// import Seo from '../components/Seo/Seo';
 import ScrollToTop from 'react-scroll-to-top';
 import Introduction from '../components/Maps/Introduction/Introduction';
 import { Link } from "gatsby";
@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Seo seo={{ metaTitle: 'Home' }} />
+      {/* <Seo seo={{ metaTitle: 'Home' }} /> */}
       <ScrollToTop
         smooth
         color="#0d6efd"
